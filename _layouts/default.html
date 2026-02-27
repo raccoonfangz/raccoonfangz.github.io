@@ -170,10 +170,12 @@ function showMessage(msg){
   messageText.textContent = msg ?? messages[index];
   messageBox.style.display = "block";
   if(!msg) index = (index + 1) % messages.length;
-  character.classList.add("squish");
-  setTimeout(()=>character.classList.remove("squish"),150);
+  if(msg !== "*yawn*"){
+    character.classList.add("squish");
+    setTimeout(()=>character.classList.remove("squish"),150);
+  }
   hideTimeout = setTimeout(()=>messageBox.style.display = "none",
-                            msg === "*yawn*" ? 1700 : 1250);
+                            msg === "*yawn*" ? 1750 : 1250);
 }
 
 function resetInactivityTimer(){
