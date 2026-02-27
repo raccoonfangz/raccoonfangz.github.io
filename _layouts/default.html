@@ -158,34 +158,54 @@ const messages = [
   "There is no secret message",
   "nor a secret game or anything",
 ];
+
 let index = 0;
 let hideTimeout;
 let isHolding = false;
 let inactivityTimeout;
+let hasYawned = false;
+
 function showMessage(msg){
   clearTimeout(hideTimeout);
   messageText.textContent = msg ?? messages[index];
   messageBox.style.display = "block";
-  index = (index + 1) % messages.length;
+  if(!msg) index = (index + 1) % messages.length;
   character.classList.add("squish");
   setTimeout(()=>character.classList.remove("squish"),150);
-  hideTimeout = setTimeout(()=>messageBox.style.display="none",1200);
-  resetInactivityTimer();
+  hideTimeout = setTimeout(()=>messageBox.style.display = "none",
+                            msg === "*yawn*" ? 1700 : 1250);
 }
+
 function resetInactivityTimer(){
-  clearTimeout(inactivityTimeout);
-  inactivityTimeout = setTimeout(()=>showMessage("*yawn*"),15000);
+  if(!hasYawned){
+    clearTimeout(inactivityTimeout);
+    inactivityTimeout = setTimeout(()=>{
+      showMessage("*yawn*");
+      hasYawned = true;
+    },15000);
+  }
 }
-["click","scroll","keydown","mousemove"].forEach(e=>document.addEventListener(e,resetInactivityTimer));
+
+["click","scroll","keydown","mousemove"].forEach(e=>{
+  document.addEventListener(e,()=>{
+    if(hasYawned){
+      messageBox.style.display="none";
+      hasYawned = false;
+    }
+    resetInactivityTimer();
+  });
+});
+
 resetInactivityTimer();
+
 character.addEventListener("click",()=>showMessage());
 character.addEventListener("mousedown",()=>{
-  isHolding=true;
+  isHolding = true;
   character.classList.add("hold-squish");
 });
 document.addEventListener("mouseup",()=>{
   if(isHolding){
-    isHolding=false;
+    isHolding = false;
     character.classList.remove("hold-squish");
   }
 });
