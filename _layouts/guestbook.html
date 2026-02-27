@@ -1,0 +1,42 @@
+---
+layout: default
+title: "Guestbook"
+---
+
+<h1>Raccoon’s Trash Can</h1>
+
+<form method="post" action="https://staticman.net/api/v3/entry/github/<your-username>/<your-repo>/<branch>/comments">
+  <input type="text" name="fields[name]" placeholder="Your name" required>
+  <input type="url" name="fields[website]" placeholder="Your website (optional)">
+  <textarea name="fields[message]" placeholder="Your message..." required></textarea>
+  <input type="hidden" name="options[redirect]" value="{{ page.url }}">
+  <button type="submit">Submit</button>
+</form>
+
+<hr>
+
+<h2>Messages</h2>
+
+{% assign comments = site.data.comments.trashcan | sort: 'date' | reverse %}
+{% if comments %}
+  {% for comment in comments %}
+    <div class="comment">
+      <p>
+        <strong>
+          {% if comment.website and comment.website != "" %}
+            <a href="{{ comment.website | escape }}" target="_blank" rel="noopener">
+              {{ comment.name }}
+            </a>
+          {% else %}
+            {{ comment.name }}
+          {% endif %}
+        </strong>
+        <span style="color: gray;">({{ comment.date | date: "%Y-%m-%d" }})</span>
+      </p>
+      <p>{{ comment.message | strip_newlines | escape }}</p>
+      <hr>
+    </div>
+  {% endfor %}
+{% else %}
+  <p>No messages yet. Be the first to say hi!</p>
+{% endif %}

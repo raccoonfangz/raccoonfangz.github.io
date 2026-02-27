@@ -1,0 +1,46 @@
+---
+layout: default
+---
+
+<article class="post">
+
+  <!-- Post title -->
+  <h1 style="font-size:1.9rem; font-weight:700; margin-bottom:0.4rem;">
+    {{ page.title }}
+  </h1>
+
+  <!-- Date badge -->
+  {% if page.date %}
+    <p style="margin-top:0; margin-bottom:1.5rem;">
+      <time datetime="{{ page.date | date_to_xmlschema }}" 
+            style="display:inline-block; padding:1px 3.5px; border-radius:3.5px; background-color:#222222; color:var(--background-color); font-size:11.5px; font-weight:bold; border:0.9px solid #222222;">
+        {{ page.date | date: "%-d %B, %Y" }}
+      </time>
+    </p>
+  {% endif %}
+
+  <!-- Post content -->
+  <div class="post-content">
+    {{ content }}
+  </div>
+
+</article>
+
+<script>
+  // Match dark theme badge colors
+  const observer = new MutationObserver(() => {
+    const theme = document.documentElement.getAttribute("data-theme");
+    const timeEl = document.querySelector("time");
+    if (!timeEl) return;
+    if (theme === "dark") {
+      timeEl.style.backgroundColor = "#e4a320";
+      timeEl.style.borderColor = "#e4a320";
+      timeEl.style.color = "var(--background-color)";
+    } else {
+      timeEl.style.backgroundColor = "#222222";
+      timeEl.style.borderColor = "#222222";
+      timeEl.style.color = "var(--background-color)";
+    }
+  });
+  observer.observe(document.documentElement, { attributes: true });
+</script>

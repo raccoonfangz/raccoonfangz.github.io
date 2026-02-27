@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5">
+  
+  <title>{{ page.title | default: site.title }}</title>
+  <link rel="canonical" href="{{ page.url | absolute_url }}">
+  <meta name="description" content="{{ page.description | default: site.description }}">
+
+  <meta property="og:site_name" content="{{ site.title }}">
+  <meta property="og:title" content="{{ page.title | default: site.title }}">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="{{ page.url | absolute_url }}">
+  <meta property="og:description" content="{{ page.description | default: site.description }}">
+  <meta property="og:image" content="{{ '/assets/images/og-image.png' | relative_url }}">
+
+  <meta property="twitter:card" content="summary">
+  <meta property="twitter:url" content="{{ page.url | absolute_url }}">
+  <meta property="twitter:title" content="{{ page.title | default: site.title }}">
+  <meta property="twitter:description" content="{{ page.description | default: site.description }}">
+  <meta property="twitter:image" content="{{ '/assets/images/og-image.png' | relative_url }}">
+
+  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+  <link rel="alternate" type="application/rss+xml" href="{{ '/feed.xml' | relative_url }}" title="{{ site.title }}">
+</head>
+
+<body class="{{ page.layout | default: 'home' }}">
+
+<header class="site-header">
+  <a class="header-title" href="/">
+    <h1>Raccoon’s Trash Can</h1>
+  </a>
+
+  <nav class="nav-links">
+    <a href="{{ '/about-me/' | relative_url }}">About me</a>
+    <a href="{{ '/posts/' | relative_url }}">Posts</a>
+    <a href="{{ '/secret/' | relative_url }}">🦝</a>
+  </nav>
+</header>
+
+<main>
+  {% if page.home_intro %}
+    {{ page.home_intro }}
+    <hr />
+  {% endif %}
+  {{ content }}
+</main>
+
+<footer style="display:flex; flex-direction:column; align-items:center; justify-content:center; padding:18px 0; text-align:center;">
+
+  <button id="theme-toggle" style="background:none; border:none; cursor:pointer; padding:0; margin:0 0 4px 0;">
+    <img id="theme-icon"
+         src="https://raccoonfangz.github.io/images/moon-symbol.png"
+         alt="Moon"
+         style="width:16px; height:16px; display:block;">
+  </button>
+
+<div style="margin:2px 0;">
+  <a href="https://notbyai.fyi" target="_blank">
+    <img src="https://raccoonfangz.github.io/images/notbyaibadge.png"
+         alt="Written by Human Not by AI"
+         style="width:110px !important; height:auto !important; display:block !important; object-fit:unset !important; border-radius:0 !important;"">
+  </a>
+</div>
+  
+  <div style="margin:2px 0;">
+    <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/"
+       target="_blank"
+       rel="license noopener noreferrer"
+       style="display:inline-flex; gap:0.2em; align-items:center; text-decoration:none;">
+      <img src="https://mirrors.creativecommons.org/presskit/icons/cc.svg" style="width:1em;">
+      <img src="https://mirrors.creativecommons.org/presskit/icons/by.svg" style="width:1em;">
+      <img src="https://mirrors.creativecommons.org/presskit/icons/nc.svg" style="width:1em;">
+      <img src="https://mirrors.creativecommons.org/presskit/icons/sa.svg" style="width:1em;">
+    </a>
+  </div>
+
+  <div class="collapsible"
+       style="cursor:pointer; font-weight:bold; margin:4px 0; font-size:0.85em;">
+    <span class="arrow"
+          style="display:inline-block; transition:transform 0.3s ease; margin-right:4px;">
+      ▼
+    </span> Webrings
+  </div>
+
+  <div id="webrings"
+       style="max-height:0; overflow:hidden; transition:max-height 0.3s ease; font-size:0.85em;">
+
+    <p style="margin:2px 0;">
+      <a href="https://sg.kamiscorner.xyz/webring/previous.php?url=https://racc.blog">←</a>
+      <a href="https://sg.kamiscorner.xyz/webring/random.php">simplechats webring</a>
+      <a href="https://sg.kamiscorner.xyz/webring/next.php?url=https://racc.blog">→</a>
+    </p>
+
+    <p style="margin:2px 0;">
+      <a href="https://webring.bucketfish.me/redirect.html?to=prev&amp;name=racc.blog">←</a>
+      <a href="https://webring.bucketfish.me">bucket webring</a>
+      <a href="https://webring.bucketfish.me/redirect.html?to=next&amp;name=racc.blog">→</a>
+    </p>
+
+    <p style="margin:2px 0;">
+      <a href="https://keithhacks.cyou/furryring.php?prev=racc.blog">←</a>
+      <a href="https://keithhacks.cyou/furryring.php">furryring</a>
+      <a href="https://keithhacks.cyou/furryring.php?next=racc.blog">→</a>
+    </p>
+
+  </div>
+
+  <span style="font-size:0.6em; margin-top:4px;">
+    &copy; {{ site.time | date: "%Y" }} {{ site.title }}.
+  </span>
+
+</footer>
+
+<script>
+const savedTheme = localStorage.getItem('theme') || 'dark';
+document.documentElement.setAttribute('data-theme', savedTheme);
+updateIcon(savedTheme);
+
+document.getElementById('theme-toggle').addEventListener('click', () => {
+  const currentTheme = document.documentElement.getAttribute('data-theme');
+  const newTheme = currentTheme === 'light' ? 'dark' : 'light';
+  document.documentElement.setAttribute('data-theme', newTheme);
+  localStorage.setItem('theme', newTheme);
+  updateIcon(newTheme);
+});
+
+function updateIcon(theme){
+  const icon = document.getElementById('theme-icon');
+  if(theme === 'light'){
+    icon.src = 'https://raccoonfangz.github.io/images/moon-symbol.png';
+    icon.alt = 'Moon';
+  } else {
+    icon.src = 'https://raccoonfangz.github.io/images/sun-symbol.png';
+    icon.alt = 'Sun';
+  }
+}
+
+const collapsible = document.querySelector('.collapsible');
+if(collapsible){
+  collapsible.addEventListener('click', () => {
+    const content = document.getElementById('webrings');
+    const arrow = collapsible.querySelector('.arrow');
+
+    if(content.style.maxHeight && content.style.maxHeight !== "0px"){
+      content.style.maxHeight = "0px";
+      arrow.style.transform = "rotate(0deg)";
+    } else {
+      content.style.maxHeight = content.scrollHeight + "px";
+      arrow.style.transform = "rotate(180deg)";
+    }
+  });
+}
+</script>
+
+<img src="/images/character.PNG" id="corner-character" alt="Character">
+
+<div id="character-message" style="display: none;">
+  <span id="message-text"></span>
+</div>
+
+<script>
+const character = document.getElementById("corner-character");
+const messageBox = document.getElementById("character-message");
+const messageText = document.getElementById("message-text");
+
+const messages = [
+  "Hi.",
+  "*pokes you back*",
+  "What's up",
+  "What's your problem?",
+  "...",
+  "Beware",
+  "yap yap",
+  "All this content on my site and yet, you choose to poke me",
+  "3",
+  "2",
+  "1",
+  "*BOOM*",
+  "Are you proud of yourself?",
+  "Pathetic",
+  "Must be so fun clicking, no?",
+  "There is no secret message",
+  "nor a secret game or anything",
+];
+
+let index = 0;
+let hideTimeout;
+let isHolding = false;
+
+function showMessage() {
+  clearTimeout(hideTimeout);
+  messageText.textContent = messages[index];
+  messageBox.style.display = "block";
+  index = (index + 1) % messages.length;
+
+  character.classList.add("squish");
+  setTimeout(() => {
+    character.classList.remove("squish");
+  }, 150); 
+
+  hideTimeout = setTimeout(() => {
+    messageBox.style.display = "none";
+  }, 1200);
+}
+
+character.addEventListener("click", showMessage);
+
+character.addEventListener("mousedown", () => {
+  isHolding = true;
+  character.classList.add("hold-squish");
+});
+
+document.addEventListener("mouseup", () => {
+  if (isHolding) {
+    isHolding = false;
+    character.classList.remove("hold-squish");
+  }
+});
+</script>
+  
+</body>
+</html>

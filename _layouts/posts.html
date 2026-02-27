@@ -1,0 +1,98 @@
+---
+layout: default
+title: Posts
+---
+
+<h2>Archive</h2>
+
+<div id="search-container">
+  <input type="text" id="searchInput" placeholder="Search posts...">
+</div>
+
+<div>
+  <strong>Total posts:</strong> <span id="post-count">—</span>
+</div>
+
+<p>
+  <strong>Most recent post:</strong>
+  {% if site.posts.size > 0 %}
+    {% assign last = site.posts | sort: "date" | last %}
+    {% assign now = "now" | date: "%s" %}
+    {% assign post_time = last.date | date: "%s" %}
+    {% assign diff = now | minus: post_time %}
+    {% assign diff_days = diff | divided_by: 86400 %}
+
+    {% if diff_days == 0 %}
+      today
+    {% elsif diff_days == 1 %}
+      1 day ago
+    {% else %}
+      {{ diff_days }} days ago
+    {% endif %}
+  {% else %}
+    No posts yet
+  {% endif %}
+</p>
+
+{% assign years = "2026,2025" | split: "," %}
+
+{% for year in years %}
+  <h3>Posts from {{ year }}</h3>
+  {% assign year_posts = site.posts | sort: "date" | reverse | where_exp: "post", "post.date | date: '%Y' == year" %}
+  {% if year_posts != empty %}
+    {% assign all_tags = year_posts | map: 'tags' | flatten | uniq | sort %}
+    {% for tag in all_tags %}
+      <details open>
+        <summary>#{{ tag }}</summary>
+        <ul class="blog-posts">
+          {% for post in year_posts %}
+            {% if post.tags contains tag %}
+              <li>
+                {% if post.date %}
+                  <time>{{ post.date | date: "%Y-%m-%d" }}</time>
+                {% endif %}
+                <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+              </li>
+            {% endif %}
+          {% endfor %}
+        </ul>
+      </details>
+    {% endfor %}
+  {% else %}
+    <p>No posts for {{ year }}.</p>
+  {% endif %}
+{% endfor %}
+
+<div id="blog-age" style="margin-top:2rem;"></div>
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+  const posts = document.querySelectorAll("ul.blog-posts li");
+  const postCount = document.getElementById("post-count");
+  postCount.textContent = posts.length;
+
+  const searchInput = document.getElementById("searchInput");
+  searchInput.addEventListener("input", function () {
+    const query = this.value.toLowerCase();
+    let visibleCount = 0;
+
+    posts.forEach(li => {
+      if (li.textContent.toLowerCase().includes(query)) {
+        li.style.display = "";
+        visibleCount++;
+      } else {
+        li.style.display = "none";
+      }
+    });
+
+    postCount.textContent = visibleCount;
+  });
+
+  const creationDate = new Date(2025, 6, 20);
+  const diffDaysBlog = Math.floor((new Date() - creationDate)/(1000*60*60*24));
+  document.getElementById("blog-age").innerHTML =
+    "<strong>Blog created:</strong> " + diffDaysBlog + " days ago";
+
+});
+</script>
