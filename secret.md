@@ -3,8 +3,9 @@ layout: default
 title: "Secret"
 permalink: /secret/
 ---
-<div style="text-align: center; white-space: pre; font-family: monospace;">
-  <pre>
+
+<div style="text-align: center;">
+  <pre style="display: inline-block; text-align: left; white-space: pre; font-family: monospace;">
 ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
 We all have somewhat of 
 a raccoon inside ourselves⠀
@@ -19,4 +20,3 @@ a raccoon inside ourselves⠀
 <strong><a href="/misc-stuff">Check out more stuff</a></strong>
   </pre>
 </div>
-
