@@ -10,12 +10,12 @@ permalink: /secret/
 We all have somewhat of 
 a raccoon inside ourselves⠀
 ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
-           ,,,
-               .'    `/\_/\
-             .'       <@I@>
-  <((((((((((  )____(  \./
-             \( \(   \(\(
-           `-"`-"  " "
+         ,,,
+             .'    `/\_/\
+           .'       <@I@>
+ <((((((((((  )____(  \./
+           \( \(   \(\(
+          `-"`-"  " "
                                                       ➣༝𖠣༝𖠣༝𖠣֊ᐷ⠀⠀⠀
 <strong><a href="/misc-stuff">Check out more stuff</a></strong>
   </pre>
