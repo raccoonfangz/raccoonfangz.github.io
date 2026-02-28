@@ -52,7 +52,7 @@
   </button>
   <div style="margin:2px 0;">
     <a href="https://notbyai.fyi" target="_blank">
-      <img src="https://raccoonfangz.github.io/images/notbyaibadge.png" alt="Written by Human Not by AI" style="width:110px !important; height:auto !important; display:block !important; object-fit:unset !important; border-radius:0 !important;">
+      <img src="https://raccoonfangz.github.io/images/notbyaibadge.png" alt="Written by Human Not by AI" style="width:110px; height:auto; display:block;">
     </a>
   </div>
   <div style="margin:2px 0;">
@@ -90,6 +90,7 @@
 const savedTheme = localStorage.getItem('theme') || 'dark';
 document.documentElement.setAttribute('data-theme', savedTheme);
 updateIcon(savedTheme);
+
 document.getElementById('theme-toggle').addEventListener('click', () => {
   const currentTheme = document.documentElement.getAttribute('data-theme');
   const newTheme = currentTheme === 'light' ? 'dark' : 'light';
@@ -97,6 +98,7 @@ document.getElementById('theme-toggle').addEventListener('click', () => {
   localStorage.setItem('theme', newTheme);
   updateIcon(newTheme);
 });
+
 function updateIcon(theme){
   const icon = document.getElementById('theme-icon');
   if(theme === 'light'){
@@ -107,6 +109,7 @@ function updateIcon(theme){
     icon.alt = 'Sun';
   }
 }
+
 const collapsible = document.querySelector('.collapsible');
 if(collapsible){
   collapsible.addEventListener('click', () => {
@@ -134,32 +137,12 @@ const messageBox = document.getElementById("character-message");
 const messageText = document.getElementById("message-text");
 
 const messages = [
-  "Hi.",
-  "*pokes you back*",
-  "yap yap",
-  "What's up",
-  "Oh. Again?",
-  "Please, stop bothering me",
-  "...",
-  "...",
-  "This is becoming a pattern.",
-  "Beware",
-  "All this content on my site",
-  "and yet,",
-  "you choose to poke me",
-  "Last warning!!",
-  "3",
-  "2",
-  "1",
-  "*BOOM*",
-  "...",
-  "...",
-  "...",
-  "Are you proud of yourself?",
-  "Must be so fun clicking, no?",
-  "There is no secret message",
-  "nor a secret game or anything",
-  "I SWEAR",
+  "Hi.","*pokes you back*","yap yap","What's up","Oh. Again?",
+  "Please, stop bothering me","...","...","This is becoming a pattern.",
+  "Beware","All this content on my site","and yet,","you choose to poke me",
+  "Last warning!!","3","2","1","*BOOM*","...","...","...",
+  "Are you proud of yourself?","Must be so fun clicking, no?",
+  "There is no secret message","nor a secret game or anything","I SWEAR",
 ];
 
 let index = 0;
@@ -191,7 +174,7 @@ function showMessage(msg){
       messageBox.style.display = "block";
       character.classList.add("squish");
       setTimeout(()=>character.classList.remove("squish"),150);
-      hideTimeout = setTimeout(()=>messageBox.style.display="none”,3100);
+      hideTimeout = setTimeout(()=>messageBox.style.display="none",3100);
     });
   }
 })();
@@ -201,7 +184,7 @@ function resetInactivityTimer(){
   inactivityTimeout = setTimeout(()=>showMessage("*yawn*"),30000);
 }
 
-["click","scroll","keydown","mousemove"].forEach(evt => 
+["click","scroll","keydown","mousemove"].forEach(evt =>
   document.addEventListener(evt, resetInactivityTimer)
 );
 resetInactivityTimer();
@@ -223,5 +206,6 @@ document.addEventListener("mouseup", () => {
   }
 });
 </script>
+
 </body>
 </html>
