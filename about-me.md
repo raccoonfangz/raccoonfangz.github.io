@@ -71,7 +71,6 @@ ___
 
 ### **Miscellaneous ♦︎**
 [**My bucket list**](/bucketlist/)  
-[**Colophon**](/colophon/)   
 [**My Letterboxd**](https://letterboxd.com/Raccoon__/)  
 [**Organisations that I support**](/organisationsisupport/)  
 
