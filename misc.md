@@ -11,7 +11,7 @@ ___
 
 [**Bearblog hosted website**](https://racc.blog) 
 
-I use this as a carbon-copy backup of my bearblog blog. If bearblog ever goes down I'll still be here on racc.blog domain
+I use this (github) website as a carbon-copy backup of my bearblog blog. If bearblog ever goes down I'll still be here on racc.blog domain
 
 ## My finished projects:
 
