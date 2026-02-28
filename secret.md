@@ -4,19 +4,18 @@ title: "Secret"
 permalink: /secret/
 ---
 
-<div style="text-align: center;">
-  <pre style="display: inline-block; text-align: left; white-space: pre; font-family: monospace;">
-⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
-We all have somewhat of 
-a raccoon inside ourselves⠀
-⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
-           ,,,
-               .'    `/\_/\
-             .'       <@I@>
-  <((((((((((  )____(  \./
-             \( \(   \(\(
-           `-"`-"  " "
-                                                     ➣༝𖠣༝𖠣༝𖠣֊ᐷ⠀⠀⠀
+<div style="display:flex; justify-content:center;">
+  <pre style="text-align:left; font-family:monospace; line-height:1.2;">
+We all have somewhat of
+a raccoon inside ourselves
+
+                ,,,
+             .'    `/\_/\
+           .'       <@I@>
+   <((((((((((  )____(  \./
+           \( \(   \(\(
+          `-"`-"  " "
+
 <strong><a href="/misc-stuff">Check out more stuff</a></strong>
   </pre>
 </div>
