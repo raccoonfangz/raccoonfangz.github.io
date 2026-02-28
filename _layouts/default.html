@@ -132,6 +132,7 @@ if(collapsible){
 const character = document.getElementById("corner-character");
 const messageBox = document.getElementById("character-message");
 const messageText = document.getElementById("message-text");
+
 const messages = [
   "Hi.",
   "*pokes you back*",
@@ -146,6 +147,7 @@ const messages = [
   "All this content on my site",
   "and yet,",
   "you choose to poke me",
+  "Last warning!!",
   "3",
   "2",
   "1",
@@ -157,13 +159,13 @@ const messages = [
   "Must be so fun clicking, no?",
   "There is no secret message",
   "nor a secret game or anything",
+  "I SWEAR",
 ];
 
 let index = 0;
 let hideTimeout;
-let isHolding = false;
 let inactivityTimeout;
-let hasYawned = false;
+let isHolding = false;
 
 function showMessage(msg){
   clearTimeout(hideTimeout);
@@ -175,37 +177,46 @@ function showMessage(msg){
     setTimeout(()=>character.classList.remove("squish"),150);
   }
   hideTimeout = setTimeout(()=>messageBox.style.display = "none",
-                            msg === "*yawn*" ? 1750 : 1250);
+                            msg === "*yawn*" ? 1500 : 1200);
 }
+
+(function(){
+  const hour = new Date().getHours();
+  const shown = sessionStorage.getItem("nightMessageShown");
+  if(hour >= 1 && hour < 4 && !shown){
+    sessionStorage.setItem("nightMessageShown","true");
+    window.addEventListener("load", () => {
+      clearTimeout(hideTimeout);
+      messageText.textContent = "Shouldn't you be asleep?";
+      messageBox.style.display = "block";
+      character.classList.add("squish");
+      setTimeout(()=>character.classList.remove("squish"),150);
+      hideTimeout = setTimeout(()=>messageBox.style.display="none”,3100);
+    });
+  }
+})();
 
 function resetInactivityTimer(){
-  if(!hasYawned){
-    clearTimeout(inactivityTimeout);
-    inactivityTimeout = setTimeout(()=>{
-      showMessage("*yawn*");
-      hasYawned = true;
-    },30000);
-  }
+  clearTimeout(inactivityTimeout);
+  inactivityTimeout = setTimeout(()=>showMessage("*yawn*"),30000);
 }
 
-["click","scroll","keydown","mousemove"].forEach(e=>{
-  document.addEventListener(e,()=>{
-    if(hasYawned){
-      messageBox.style.display="none";
-      hasYawned = false;
-    }
-    resetInactivityTimer();
-  });
-});
-
+["click","scroll","keydown","mousemove"].forEach(evt => 
+  document.addEventListener(evt, resetInactivityTimer)
+);
 resetInactivityTimer();
 
-character.addEventListener("click",()=>showMessage());
-character.addEventListener("mousedown",()=>{
+character.addEventListener("click", () => {
+  showMessage();
+  resetInactivityTimer();
+});
+
+character.addEventListener("mousedown", () => {
   isHolding = true;
   character.classList.add("hold-squish");
 });
-document.addEventListener("mouseup",()=>{
+
+document.addEventListener("mouseup", () => {
   if(isHolding){
     isHolding = false;
     character.classList.remove("hold-squish");
