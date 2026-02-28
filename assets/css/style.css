@@ -1,4 +1,4 @@
-title:not(.header-title),
+.title:not(.header-title),
 p.tags {
   display: none !important;
 }
@@ -14,7 +14,6 @@ p.tags {
   --visited-color: #5a5a5a;
   --code-background-color: #f6f6f6;
   --code-color: #222222;
-
 }
 
 :root[data-theme="dark"] {
@@ -119,11 +118,9 @@ main h4 {
     flex-direction: column;
     align-items: flex-start;
   }
-
   .site-header .nav-links {
     margin-top: 8px;
   }
-
   .site-header .nav-links a:first-child {
     margin-left: 0;
   }
@@ -146,11 +143,11 @@ hr {
 }
 
 img {
-  width: 100%;        
-  max-width: auto;    
-  height: auto;      
+  width: 100%;
+  max-width: auto;
+  height: auto;
   border-radius: 10px;
-  object-fit: contain; 
+  object-fit: contain;
   margin: 0 auto;
 }
 
@@ -262,7 +259,6 @@ footer p {
   margin: 0;
 }
 
-
 footer span:has(.bear) {
   font-size: 0.7rem !important;
 }
@@ -310,11 +306,10 @@ footer .footer-note mark {
 }
 
 figcaption {
-font-size: 16px;
-text-align: center;
-margin-top: -2px;
+  font-size: 16px;
+  text-align: center;
+  margin-top: -2px;
 }
-
 
 #corner-character {
   position: fixed;
@@ -325,10 +320,19 @@ margin-top: -2px;
   cursor: pointer;
   transform-origin: bottom center;
   transition: transform 0.12s cubic-bezier(0.3, 1.5, 0.5, 1);
+  transform: translateZ(0);
+  will-change: transform;
+  backface-visibility: hidden;
 }
 
-#corner-character.squish { transform: scale(1.08, 0.9); }
-#corner-character.hold-squish { transform: scale(1.12, 0.88); }
+#corner-character.squish {
+  animation: squishAnim 0.35s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+  transform: translateZ(0);
+}
+
+#corner-character.hold-squish {
+  transform: scale(1.12, 0.88) translateZ(0);
+}
 
 #character-message {
   position: fixed;
@@ -344,8 +348,10 @@ margin-top: -2px;
   text-align: center;
   font-size: 14px;
   box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+  transform: translateZ(0);
+  will-change: transform;
+  backface-visibility: hidden;
 }
-
 
 @media (max-width: 600px) {
   #corner-character,
@@ -353,7 +359,6 @@ margin-top: -2px;
     display: none !important;
   }
 }
-
 
 @media (min-width: 601px) {
   #corner-character,
@@ -369,8 +374,4 @@ margin-top: -2px;
   55%  { transform: scale(1.04, 0.96); }
   75%  { transform: scale(0.98, 1.02); }
   100% { transform: scale(1, 1); }
-}
-
-#corner-character.squish {
-  animation: squishAnim 0.35s cubic-bezier(0.4, 0, 0.2, 1) forwards;
 }
