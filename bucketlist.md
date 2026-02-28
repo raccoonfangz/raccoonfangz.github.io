@@ -1,12 +1,9 @@
 ---
 layout: post
-title: Bucket list
+title: My bucket list
 permalink: /bucketlist/
 ---
 
-# My bucket list
-
-___
 
 ## Experiences
 
@@ -35,7 +32,7 @@ ___
 ##  Things
 [ ] Get a great wardrobe \
 [ ] Buy/Make a fursuit \
-[ ] Get an exotic pet 
+[x] Get an exotic pet 
 
 ##  Animal bucket list
 [ ] See all animals that I want 
