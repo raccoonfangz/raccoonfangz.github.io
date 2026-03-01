@@ -377,3 +377,44 @@ margin-top: -2px;
 #corner-character.squish {
   animation: squishAnim 0.35s cubic-bezier(0.4, 0, 0.2, 1) forwards;
 }
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 5px 0;
+
+  font-size: 16px; 
+  color: var(--text-color);
+}
+
+table th, table td {
+  border: 1px solid #ccc;
+  padding: 5px 8px; 
+  text-align: left;
+}
+
+table th {
+  background-color: #f4f4f4;
+  color: #000;
+  font-weight: bold;
+}
+
+table tr:nth-child(even) {
+  background-color: #fafafa;
+}
+
+@media (prefers-color-scheme: dark), :root[data-theme="dark"] {
+  table th, table td {
+    border: 1px solid #555;
+  }
+
+  table th {
+    background-color: var(--code-background-color);
+    color: var(--code-color);
+  }
+
+  table tr:nth-child(even),
+  table tr:nth-child(odd) {
+    background-color: transparent;
+  }
+}
