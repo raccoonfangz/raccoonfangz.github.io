@@ -18,7 +18,7 @@ There is a crazy amount of memes coming from Spongebob, and I think this is beca
 S7E18 - "That Sinking Feeling"
 </figcaption>
 
-![sp-the](images/sp-the.jpg)
+![sp-the](images/sp-the.png)
 <figcaption>
 S2E17 - “Procrastination"
 </figcaption>
