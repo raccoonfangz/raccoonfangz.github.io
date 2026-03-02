@@ -13,22 +13,22 @@ God, I love this cartoon. Seasons 1-3 especially (before Stephen Hillenburg step
 
 There is a crazy amount of memes coming from Spongebob, and I think this is because the faces are often exaggerated and instantly readable! I’ll list some of my favourite frames and their origin:
 
-![sp-window](images/sp-window.jpg)
+![sp-window](/images/sp-window.jpg)
 <figcaption>
 S7E18 - "That Sinking Feeling"
 </figcaption>
 
-![sp-the](images/sp-the.png)
+![sp-the](/images/sp-the.png)
 <figcaption>
 S2E17 - “Procrastination"
 </figcaption>
 
-![sp-squid](images/sp-squid.jpg)
+![sp-squid](/images/sp-squid.jpg)
 <figcaption>
 S1E16 - “The Paper"
 </figcaption>
 
-![sp-get](images/sp-get.jpg)
+![sp-get](/images/sp-get.jpg)
 <figcaption>
 S1E11 - "Squidward the Unfriendly Ghost"
 </figcaption>
