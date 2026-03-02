@@ -48,11 +48,11 @@
 
 <footer style="display:flex; flex-direction:column; align-items:center; justify-content:center; padding:18px 0; text-align:center;">
   <button id="theme-toggle" style="background:none; border:none; cursor:pointer; padding:0; margin:0 0 4px 0;">
-    <img id="theme-icon" src="https://raccoonfangz.github.io/images/moon-symbol.png" alt="Moon" style="width:16px; height:16px; display:block;">
+    <img id="theme-icon" src="/images/moon-symbol.png" alt="Moon" style="width:16px; height:16px; display:block;">
   </button>
   <div style="margin:2px 0;">
     <a href="https://notbyai.fyi" target="_blank">
-      <img src="https://raccoonfangz.github.io/images/notbyaibadge.png" alt="Written by Human Not by AI" style="width:110px; height:auto; display:block; border-radius:0;">
+      <img src="/images/notbyaibadge.png" alt="Written by Human Not by AI" style="width:110px; height:auto; display:block; border-radius:0;">
     </a>
   </div>
   <div style="margin:2px 0;">
@@ -102,10 +102,10 @@ document.getElementById('theme-toggle').addEventListener('click', () => {
 function updateIcon(theme){
   const icon = document.getElementById('theme-icon');
   if(theme === 'light'){
-    icon.src = 'https://raccoonfangz.github.io/images/moon-symbol.png';
+    icon.src = '/images/moon-symbol.png';
     icon.alt = 'Moon';
   } else {
-    icon.src = 'https://raccoonfangz.github.io/images/sun-symbol.png';
+    icon.src = '/images/sun-symbol.png';
     icon.alt = 'Sun';
   }
 }
