@@ -54,7 +54,7 @@ Then I ask myself the same question.”
 
 **Painter:** Claude Monet - “The Magpie” (1868)
 
-![Claude-Monet-The-Magpie-Google-Art-Project](https://raccoonfangz.github.io/images/claude-monet-the-magpie-.webp)
+![Claude-Monet-The-Magpie-Google-Art-Project](/images/claude-monet-the-magpie-.webp)
 
 **Word:** Sonder [**son**-der] -
 the feeling one has on realising that every other individual one sees has a life as full and real as one’s own, in which they are the central character and others, including oneself, have secondary or insignificant roles.[^1]
