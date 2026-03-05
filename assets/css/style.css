@@ -1,8 +1,3 @@
-.title:not(.header-title),
-p.tags {
-  display: none !important;
-}
-
 :root[data-theme="light"] {
   --width: 48rem;
   --font-main: system-ui, sans-serif;
