@@ -49,6 +49,16 @@ strong, b {
   color: var(--heading-color);
 }
 
+[data-theme="dark"] main strong a,
+[data-theme="dark"] main a strong {
+  color: #e4a320;
+}
+
+[data-theme="dark"] main strong a:hover,
+[data-theme="dark"] main a strong:hover {
+  text-decoration: underline;
+}
+
 a {
   color: var(--heading-color);
   text-decoration: none;
