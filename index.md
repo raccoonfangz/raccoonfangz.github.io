@@ -3,9 +3,7 @@ layout: default
 title: Raccoon's Trash Can
 ---
 
-___
-
-Hi! I’m a raccoon, and this is my trash can. It’s full of my thoughts about the mess of being human :]
+Hi! I’m a raccoon, and this is my trash can :] It’s full of my thoughts about the mess of being human. No human is perfect, including me, and that’s why we are so fascinating.
 
 Check out __[about me](about-me)__ section to find out who I am‼️
 
