@@ -48,7 +48,7 @@
 
 <footer style="display:flex; flex-direction:column; align-items:center; justify-content:center; padding:18px 0; text-align:center;">
   <button id="theme-toggle" style="background:none; border:none; cursor:pointer; padding:0; margin:0 0 4px 0;">
-    <img id="theme-icon" src="/images/moon-symbol.png" alt="Moon" style="width:16px; height:16px; display:block;">
+    <img id="theme-icon" src="/images/moon-symbol.png" alt="Moon" style="width:18px; height:18px; display:block;">
   </button>
   <div style="margin:2px 0;">
     <a href="https://notbyai.fyi" target="_blank">
@@ -101,6 +101,8 @@ document.getElementById('theme-toggle').addEventListener('click', () => {
 
 function updateIcon(theme){
   const icon = document.getElementById('theme-icon');
+  icon.style.width = "18px";
+  icon.style.height = "18px";
   if(theme === 'light'){
     icon.src = '/images/moon-symbol.png';
     icon.alt = 'Moon';
