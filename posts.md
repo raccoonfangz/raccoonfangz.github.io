@@ -4,8 +4,6 @@ title: "Posts"
 permalink: /posts/
 ---
 
-<hr>
-
 <section class="posts-archive" style="margin-top: .5rem;">
 
   <h3>Archive</h3>
