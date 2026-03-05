@@ -65,6 +65,12 @@ a {
   cursor: pointer;
 }
 
+figcaption {
+  font-size: 16px;
+  text-align: center;
+  margin-top: -2px;
+}
+
 a:hover {
   text-decoration: none;
 }
@@ -248,12 +254,6 @@ table tr:nth-child(even) {
   }
 }
 
-figcaption {
-  font-size: 16px;
-  text-align: center;
-  margin-top: -2px;
-}
-
 code {
   font-family: monospace;
   padding: 2px;
@@ -322,6 +322,10 @@ footer {
   background-color: transparent; 
 }
 
+hr {
+  border: 0;
+  border-top: 1px dashed;
+}
 
 footer p {
   margin: 0;
@@ -466,14 +470,13 @@ body::before {
 main {
   position: relative;
   z-index: 1; 
-  background-color: rgba(253, 253, 253, 0.85);
-  border-radius: 0;
+  background-color: var(--background-color); 
+  border-radius: 0 0 14px 14px; 
   max-width: var(--width);
   margin: 0 auto;
   padding: 5px 25px 25px 25px;
-  border-radius: 0 0 14px 14px;
 }
 
 :root[data-theme="dark"] main {
-  background-color: rgba(13, 13, 13, 0.85);
+  background-color: var(--background-color);
 }
