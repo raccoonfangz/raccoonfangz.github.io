@@ -1,3 +1,8 @@
+.title:not(.header-title),
+p.tags {
+  display: none !important;
+}
+
 :root[data-theme="light"] {
   --width: 48rem;
   --font-main: system-ui, sans-serif;
@@ -297,7 +302,10 @@ footer {
   padding-bottom: 5px !important;
   text-align: center;
   line-height: 1.0;
+  z-index: 1;
+  background-color: transparent; 
 }
+
 
 footer p {
   margin: 0;
@@ -390,23 +398,66 @@ footer .footer-note mark {
   100% { transform: scale(1, 1); }
 }
 
-[data-theme="dark"] main strong a,
-[data-theme="dark"] main a strong {
-  color: #e4a320;
+footer {
+  position: relative;
+  z-index: 1;
+  background-color: rgba(253, 253, 253, 0.25); 
+  border-radius: 0 0 14px 14px;
+  max-width: var(--width);
+  margin: 0 auto;
+  padding: 10px 25px;
 }
 
-[data-theme="dark"] main strong a:hover,
-[data-theme="dark"] main a strong:hover {
-  text-decoration: underline;
+:root[data-theme="dark"] footer {
+  background-color: rgba(13, 13, 13, 0.25);
 }
 
-hr {
-  border: 0;
-  border-top: 1px dashed;
+body::before {
+  content: "";
+  position: fixed; 
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  pointer-events: none;
+  background-image:
+    linear-gradient(to right, rgba(0,0,0,0.05) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(0,0,0,0.05) 1px, transparent 1px);
+  background-size: 37px 37px;
+  background-position: -5px 0px;
 }
 
-figcaption {
-  font-size: 16px;
-  text-align: center;
-  margin-top: -2px;
+:root[data-theme="dark"] body::before {
+  background-image:
+    linear-gradient(to right, rgba(255,255,255,0.05) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255,255,255,0.05) 1px, transparent 1px);
+}
+
+.site-header {
+  position: relative;
+  z-index: 1; 
+  background-color: var(--background-color); 
+  border-radius: 14px 14px 0 0;
+  max-width: var(--width);
+  margin: 0 auto;
+  padding: 18px 25px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+main {
+  position: relative;
+  z-index: 1; 
+  background-color: rgba(253, 253, 253, 0.85);
+  border-radius: 0;
+  max-width: var(--width);
+  margin: 0 auto;
+  padding: 5px 25px 25px 25px;
+  border-radius: 0 0 14px 14px;
+}
+
+:root[data-theme="dark"] main {
+  background-color: rgba(13, 13, 13, 0.85);
 }
