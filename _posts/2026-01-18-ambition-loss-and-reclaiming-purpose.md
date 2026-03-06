@@ -18,5 +18,7 @@ However, that doesn’t mean that it cannot return.
 A small goal, a personal milestone, or a simple vision of progress can reignite the sense of direction that makes every effort feel meaningful. Ambition is the path that connects who we are today to the person we want to become tomorrow.
 
 Reclaiming it is like finding your way home, a reminder that purpose must exist.
+
 ___
+
 Enjoyed the article? Subscribe to my [**RSS feed**](https://raccoon.bearblog.dev/feed/?type=rss) :D
