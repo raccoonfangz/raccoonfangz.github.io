@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Monthly Fiction - "The fourth spin" 
+title: Fiction - "The fourth spin" 
 tags:
   - 2025
   - fiction
