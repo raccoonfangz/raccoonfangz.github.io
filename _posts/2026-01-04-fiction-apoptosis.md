@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Monthly Fiction - “Apoptosis”
+title: Fiction - “Apoptosis”
 tags:
   - 2026
   - fiction
