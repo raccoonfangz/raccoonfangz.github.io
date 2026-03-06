@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Monthly Fiction - "Diagnosis"
+title: Fiction - "Diagnosis"
 tags:
   - 2025
   - fiction
