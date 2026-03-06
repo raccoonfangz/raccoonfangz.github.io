@@ -8,7 +8,7 @@ permalink: /posts/
 
   <h2>Archive</h2>
 
-  <div id="search-container" style="margin:0.6rem 0 1rem 0; user-select:none;">
+  <div id="search-container" style="margin:1.5rem 0 1rem 0; user-select:none;">
     <input type="text" id="searchInput" placeholder="Search posts..."
       style="display:block; width:200px; max-width:90%; padding:0.4rem 0.6rem;
              border:2px solid var(--heading-color); border-radius:5px;
