@@ -7,7 +7,7 @@ permalink: /about-me/
 ## About me 
 
 
-**Name:** Adam/Ash ♂︎ (he/him)
+**Name:** Adam ♂︎ (he/him)
 
 **Species:** Procyon Lotor impersonating a Homo Sapiens  
 
