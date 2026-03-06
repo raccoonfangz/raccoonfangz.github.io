@@ -59,7 +59,7 @@ the feeling one has on realising that every other individual one sees has a life
 
 **Joke:** A bear walks into a bar and says: "Give me a whiskey and….. cola." "Why the big pause?" - asks the bartender. The bear shrugged. "I'm not sure; I was born with them.”
 
-**Games:** Rimworld, Project Zomboid, Rimworld
+**Games:** Rimworld, Project Zomboid
 
 **Animals:** Raccoons, Foxes, Coyotes, Deers and a hundred more ;]
 
