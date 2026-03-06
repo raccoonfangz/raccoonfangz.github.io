@@ -6,10 +6,12 @@ permalink: /about/
 
 ## About racc.blog
 
-Hi! I’m a raccoon, and this is my trash can. It’s full of my thoughts about the mess of being human :]
-
 I like to write about humans - their habits, choices, and issues. No human is perfect, including me, and that’s why we are so fascinating. Our flaws aren’t just weaknesses. They reveal our desires and fears.
 
-Also, as somebody described it, I write “amateur philosophy” and about ethics.
+I also write what some might call amateur philosophy, and about ethics.
+
+This is a blog with articles, not watertight arguments being sent to a philosophy journal. I can, and I will get things wrong, and I'd rather you push back than nod along.
+
+Not everything needs to be a rigorous ethical treatise, sometimes I just want to say “this feels wrong to me” and put it out there.
 
 I invite you to check out my articles :]
