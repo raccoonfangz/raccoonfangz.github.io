@@ -106,14 +106,13 @@ document.addEventListener("DOMContentLoaded", function () {
     return d + ' days';
   }
 
-  // Blog age
+
   (function setBlogAge() {
-    const creationDate = new Date(2025, 5, 20); // June = 5
+    const creationDate = new Date(2025, 5, 20); 
     const days = Math.floor((Date.now() - creationDate.getTime()) / (1000*60*60*24));
     blogAgeEl.innerHTML = "<strong>Blog created:</strong> " + days + " days ago";
   })();
 
-  // Last post
   {% assign last_post = site.posts | sort: 'date' | last %}
   {% if last_post %}
   (function setLastPost() {
@@ -125,7 +124,6 @@ document.addEventListener("DOMContentLoaded", function () {
   lastPostedEl.textContent = "No posts yet";
   {% endif %}
 
-  // Initial count
   updateCount();
 
   const detailsEls = Array.from(document.querySelectorAll('details.tag-group'));
