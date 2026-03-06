@@ -6,7 +6,7 @@ permalink: /posts/
 
 <section class="posts-archive" style="margin-top: .5rem;">
 
-  <h2>Archive</2>
+  <h2>Archive</h2>
 
   <div id="search-container" style="margin:0.6rem 0 1rem 0; user-select:none;">
     <input type="text" id="searchInput" placeholder="Search posts..."
