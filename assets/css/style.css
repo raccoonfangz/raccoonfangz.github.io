@@ -508,6 +508,7 @@ html {
 
   .site-header .header-title h1 { font-size: 1.7rem; }
   .site-header .nav-links a { font-size: 1.3rem; }
+  .upvote-button { font-size: 1.15rem; }
 
   main h1 { font-size: 2.6rem !important; }
   main h2 { font-size: 2.3rem !important; }
@@ -541,6 +542,7 @@ html {
 
   .site-header .header-title h1 { font-size: 2rem; }
   .site-header .nav-links a { font-size: 1.55rem; }
+  .upvote-button { font-size: 1.15rem; }
 
   main h1 { font-size: 3.2rem !important; }
   main h2 { font-size: 3.0rem !important; }
