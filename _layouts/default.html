@@ -29,7 +29,7 @@
 
 <header class="site-header">
   <a class="header-title" href="/">
-    <h1>Raccoon’s Trash Can</h1>
+    <h1>Raccoon's Trash Can</h1>
   </a>
   <nav class="nav-links">
     <a href="{{ '/about-me/' | relative_url }}">About me</a>
@@ -46,27 +46,33 @@
   {{ content }}
 </main>
 
-<footer style="display:flex; flex-direction:column; align-items:center; justify-content:center; padding:20px 0 16px 0; text-align:center;">
-  <button id="theme-toggle" style="background:none; border:none; cursor:pointer; padding:0; margin:2px 0 2px 0;">
-    <img id="theme-icon" src="/images/moon-symbol.png" alt="Moon" style="width:18px; height:18px; display:block;">
+<footer>
+  <button id="theme-toggle">
+    <img id="theme-icon" src="/images/moon-symbol.png" alt="Moon">
   </button>
-  <div style="margin:2px 0;">
+
+  <div>
     <a href="https://notbyai.fyi" target="_blank">
-      <img src="/images/notbyaibadge.png" alt="Written by Human Not by AI" style="width:110px; height:auto; display:block; border-radius:0;">
+      <img src="/images/notbyaibadge.png" alt="Written by Human Not by AI" class="not-by-ai-badge">
     </a>
   </div>
-  <div style="margin:2px 0;">
-    <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" rel="license noopener noreferrer" style="display:inline-flex; gap:0.2em; align-items:center; text-decoration:none;">
-      <img src="https://mirrors.creativecommons.org/presskit/icons/cc.svg" style="width:1em;">
-      <img src="https://mirrors.creativecommons.org/presskit/icons/by.svg" style="width:1em;">
-      <img src="https://mirrors.creativecommons.org/presskit/icons/nc.svg" style="width:1em;">
-      <img src="https://mirrors.creativecommons.org/presskit/icons/sa.svg" style="width:1em;">
+
+  <div>
+    <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/"
+       target="_blank"
+       rel="license noopener noreferrer"
+       style="display:inline-flex; gap:0.2em; align-items:center; text-decoration:none;">
+      <img src="https://mirrors.creativecommons.org/presskit/icons/cc.svg" alt="CC" class="cc-icon">
+      <img src="https://mirrors.creativecommons.org/presskit/icons/by.svg" alt="BY" class="cc-icon">
+      <img src="https://mirrors.creativecommons.org/presskit/icons/nc.svg" alt="NC" class="cc-icon">
+      <img src="https://mirrors.creativecommons.org/presskit/icons/sa.svg" alt="SA" class="cc-icon">
     </a>
   </div>
-  <div class="collapsible" style="cursor:pointer; font-weight:bold; margin:0px 0; font-size:0.85em;">
-    <span class="arrow" style="display:inline-block; transition:transform 0.3s ease; margin-right:4px;">▼</span> Webrings
+
+  <div class="collapsible">
+    <span class="arrow">▼</span> Webrings
   </div>
-  <div id="webrings" style="max-height:0; overflow:hidden; transition:max-height 0.3s ease; font-size:0.85em;">
+  <div id="webrings" style="max-height:0; overflow:hidden; transition:max-height 0.3s ease;">
     <p style="margin:2px 0;">
       <a href="https://sg.kamiscorner.xyz/webring/previous.php?url=https://racc.blog">←</a>
       <a href="https://sg.kamiscorner.xyz/webring/random.php">simplechats webring</a>
@@ -83,8 +89,14 @@
       <a href="https://keithhacks.cyou/furryring.php?next=racc.blog">→</a>
     </p>
   </div>
+
   <span style="font-size:0.6em; margin-top:0px;">&copy; {{ site.time | date: "%Y" }} {{ site.title }}.</span>
 </footer>
+
+<img src="/images/character.PNG" id="corner-character" alt="Character">
+<div id="character-message" style="display:none;">
+  <span id="message-text"></span>
+</div>
 
 <script>
 const savedTheme = localStorage.getItem('theme') || 'dark';
@@ -101,8 +113,6 @@ document.getElementById('theme-toggle').addEventListener('click', () => {
 
 function updateIcon(theme){
   const icon = document.getElementById('theme-icon');
-  icon.style.width = "18px";
-  icon.style.height = "18px";
   if(theme === 'light'){
     icon.src = '/images/moon-symbol.png';
     icon.alt = 'Moon';
@@ -126,14 +136,38 @@ if(collapsible){
     }
   });
 }
-</script>
 
-<img src="/images/character.PNG" id="corner-character" alt="Character">
-<div id="character-message" style="display: none;">
-  <span id="message-text"></span>
-</div>
+(function(){
+  function addTimeToPostDates(){
+    if(!document.body.classList.contains('post')) return;
+    const timeElements = document.querySelectorAll('main time');
+    timeElements.forEach(timeEl => {
+      if(!timeEl.dateTime) return;
+      const postDate = new Date(timeEl.dateTime);
+      const now = new Date();
+      const isToday = postDate.getDate() === now.getDate() &&
+                      postDate.getMonth() === now.getMonth() &&
+                      postDate.getFullYear() === now.getFullYear();
 
-<script>
+      let hours = postDate.getHours();
+      const minutes = postDate.getMinutes();
+      const ampm = hours >= 12 ? 'PM' : 'AM';
+      hours = hours % 12 || 12;
+      const minutesStr = minutes.toString().padStart(2,'0');
+      const timeStr = `${hours}:${minutesStr} ${ampm}`;
+
+      const currentDateText = timeEl.innerText.trim();
+      if(isToday) timeEl.innerText = `Today • ${timeStr}`;
+      else timeEl.innerText = `${currentDateText} • ${timeStr}`;
+    });
+  }
+
+  if(document.readyState === 'loading')
+    document.addEventListener('DOMContentLoaded', addTimeToPostDates);
+  else
+    setTimeout(addTimeToPostDates, 100);
+})();
+
 const character = document.getElementById("corner-character");
 const messageBox = document.getElementById("character-message");
 const messageText = document.getElementById("message-text");
@@ -161,7 +195,7 @@ function showMessage(msg){
     character.classList.add("squish");
     setTimeout(()=>character.classList.remove("squish"),150);
   }
-  hideTimeout = setTimeout(()=>messageBox.style.display = "none",
+  hideTimeout = setTimeout(()=>messageBox.style.display="none",
                             msg === "*yawn*" ? 1500 : 1200);
 }
 
