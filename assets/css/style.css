@@ -253,7 +253,7 @@ footer {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 3px;
+  gap: 5px;
   padding: 10px 25px !important;
   text-align: center;
   line-height: 1.0;
@@ -265,10 +265,6 @@ footer {
 
 :root[data-theme="dark"] footer {
   background-color: rgba(13, 13, 13, 0.25);
-}
-
-.collapsible {
-  margin: 0; 
 }
 
 footer p {
