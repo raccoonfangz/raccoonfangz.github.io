@@ -10,7 +10,7 @@ I like to write about humans - their habits, choices, and issues. No human is pe
 
 I also write what some might call amateur philosophy, and about ethics.
 
-This is a blog with articles, not watertight arguments being sent to a philosophy journal. I can, and I will get things wrong, and I'd rather you push back than nod along.
+This is a blog with articles, not watertight arguments being sent to a philosophy journal. I can, and I will, get things wrong, and I'd rather you disagree than nod along.
 
 Not everything needs to be a rigorous ethical treatise, sometimes I just want to say “this feels wrong to me” and put it out there.
 
