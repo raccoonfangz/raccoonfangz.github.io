@@ -460,6 +460,27 @@ table tr:nth-child(even) {
   border-radius: 0 !important;
 }
 
+#theme-toggle {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  margin: 2px 0;
+}
+
+#theme-toggle img {
+  display: block;
+  width: 18px;
+  height: 18px;
+}
+
+.not-by-ai-badge {
+  width: 110px;
+  height: auto;
+  display: block;
+  border-radius: 0 !important;
+}
+
 /*==ANIMATION==*/
 
 @keyframes squishAnim {
