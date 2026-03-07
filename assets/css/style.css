@@ -563,9 +563,9 @@ html {
   }
 
   .not-by-ai-badge img {
-    max-width: 170px !important;
-    max-height: 75px !important;
+    max-width: 150px !important;
+    max-height: 55px !important;
   }
 
-  .cc-icon { width: 1.3em; height: 1.3em; }
+  .cc-icon { width: 1.2em; height: 1.2em; }
 }
