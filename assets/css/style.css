@@ -509,10 +509,10 @@ html {
   .site-header .header-title h1 { font-size: 1.7rem; }
   .site-header .nav-links a { font-size: 1.3rem; }
 
-  main h1 { font-size: 2.6rem; }
-  main h2 { font-size: 2.3rem; }
-  main h3 { font-size: 2rem; }
-  main h4 { font-size: 1.6rem; }
+  main h1 { font-size: 2.6rem !important; }
+  main h2 { font-size: 2.3rem !important; }
+  main h3 { font-size: 2rem !important; }
+  main h4 { font-size: 1.6rem !important; }
 
   figcaption { font-size: 20px; }
   footer { font-size: 1.3rem; }
@@ -542,10 +542,10 @@ html {
   .site-header .header-title h1 { font-size: 2rem; }
   .site-header .nav-links a { font-size: 1.55rem; }
 
-  main h1 { font-size: 3.2rem; }
-  main h2 { font-size: 2.8rem; }
-  main h3 { font-size: 2.4rem; }
-  main h4 { font-size: 1.9rem; }
+  main h1 { font-size: 3.2rem !important; }
+  main h2 { font-size: 3.0rem !important; }
+  main h3 { font-size: 2.4rem !important; }
+  main h4 { font-size: 1.9rem !important; }
 
   figcaption { font-size: 24px; }
   footer { font-size: 1.55rem; }
