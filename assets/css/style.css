@@ -110,7 +110,7 @@ hr {
   color: var(--text-color);
 }
 
-/*==TYPOGRAPGHY==*/
+/*==TYPOGRAPHY==*/
 
 h1, h2, h3, h4, h5, h6,
 strong, b {
@@ -154,7 +154,6 @@ code {
   color: var(--code-color);
   border-radius: 3px;
   word-break: break-all;
-}
 }
 
 blockquote {
@@ -208,7 +207,6 @@ mark {
   background-color: #e4a320;
   border-color: #e4a320;
 }
-
 
 /*==LAYOUT==*/
 
@@ -288,7 +286,6 @@ footer .footer-note mark {
   border: 1px solid #e4a320;
 }
 
-
 /*==NAV==*/
 
 .site-header .header-title h1 {
@@ -320,7 +317,6 @@ footer .footer-note mark {
   text-decoration: underline;
 }
 
-
 /*==BLOG_POSTS_LIST==*/
 
 ul.blog-posts {
@@ -350,7 +346,6 @@ ul.blog-posts li a:hover {
 ul.blog-posts li a:visited {
   color: var(--visited-color);
 }
-
 
 /*==TABLE==*/
 
@@ -433,7 +428,6 @@ table tr:nth-child(even) {
   box-shadow: 0 2px 6px rgba(0,0,0,0.2);
 }
 
-
 /*==NOT_BY_AI_BADGE==*/
 
 .not-by-ai-badge-wrapper {
@@ -458,6 +452,13 @@ table tr:nth-child(even) {
   border-radius: 0 !important;
 }
 
+/*==CC_ICONS==*/
+
+.cc-icon {
+  width: 1em;
+  height: 1em;
+  border-radius: 0 !important;
+}
 
 /*==ANIMATION==*/
 
@@ -469,7 +470,6 @@ table tr:nth-child(even) {
   75%  { transform: scale(0.98, 1.02); }
   100% { transform: scale(1, 1); }
 }
-
 
 /*==MOBILE==*/
 
@@ -497,19 +497,8 @@ html {
   scroll-behavior: smooth;
 }
 
-/*==PRINT==*/
-@media print {
-  body::before,
-  #corner-character,
-  #character-message,
-  .site-header .nav-links { display: none; }
+/*==BIGGER SCREENS==*/
 
-  footer > *:not(.not-by-ai-badge-wrapper):not(.footer-note) { display: none; }
-
-  body { font-size: 12pt; line-height: 1.5; }
-}
-
-/*==BIG SCREENS==*/
 @media (min-width: 1920px) {
   :root[data-theme="light"],
   :root[data-theme="dark"] {
@@ -530,7 +519,17 @@ html {
   time { font-size: 14px; }
   mark { font-size: 15px; }
   table { font-size: 20px; }
-  #theme-toggle img { width: 26px; height: 26px; }
+
+  #theme-toggle img { width: 20px !important; height: 20px !important; }
+
+  #corner-character { width: 160px; }
+  #character-message {
+    font-size: 18px;
+    max-width: 260px;
+    bottom: 185px;
+  }
+
+  .cc-icon { width: 1.1em; height: 1.1em; }
 }
 
 @media (min-width: 2560px) {
@@ -553,5 +552,20 @@ html {
   time { font-size: 17px; }
   mark { font-size: 18px; }
   table { font-size: 24px; }
-  #theme-toggle img { width: 32px; height: 32px; }
+
+  #theme-toggle img { width: 26px !important; height: 26px !important; }
+
+  #corner-character { width: 200px; }
+  #character-message {
+    font-size: 22px;
+    max-width: 320px;
+    bottom: 230px;
+  }
+
+  .not-by-ai-badge img {
+    max-width: 190px !important;
+    max-height: 95px !important;
+  }
+
+  .cc-icon { width: 1.45em; height: 1.45em; }
 }
