@@ -1,7 +1,7 @@
 /*==VARIABLES==*/
 
 :root[data-theme="light"] {
-  --width: 48rem;
+  --width: 50rem;
   --font-main: system-ui, sans-serif;
   --font-secondary: system-ui, sans-serif;
   --font-scale: 1.25em;
@@ -14,7 +14,7 @@
 }
 
 :root[data-theme="dark"] {
-  --width: 48rem;
+  --width: 50rem;
   --font-main: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   --font-secondary: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   --font-scale: 1.25em;
@@ -507,4 +507,49 @@ html {
   footer > *:not(.not-by-ai-badge-wrapper):not(.footer-note) { display: none; }
 
   body { font-size: 12pt; line-height: 1.5; }
+}
+
+/*==BIG SCREENS==*/
+@media (min-width: 1920px) {
+  :root[data-theme="light"],
+  :root[data-theme="dark"] {
+    --font-scale: 1.6em;
+    --width: 60rem;
+  }
+
+  .site-header .header-title h1 { font-size: 1.7rem; }
+  .site-header .nav-links a { font-size: 1.3rem; }
+
+  main h1 { font-size: 2.6rem; }
+  main h2 { font-size: 2.3rem; }
+  main h3 { font-size: 2rem; }
+  main h4 { font-size: 1.6rem; }
+
+  figcaption { font-size: 20px; }
+  footer { font-size: 1.3rem; }
+  time { font-size: 14px; }
+  mark { font-size: 15px; }
+  table { font-size: 20px; }
+}
+
+@media (min-width: 2560px) {
+  :root[data-theme="light"],
+  :root[data-theme="dark"] {
+    --font-scale: 1.85em;
+    --width: 75rem;
+  }
+
+  .site-header .header-title h1 { font-size: 2rem; }
+  .site-header .nav-links a { font-size: 1.55rem; }
+
+  main h1 { font-size: 3.2rem; }
+  main h2 { font-size: 2.8rem; }
+  main h3 { font-size: 2.4rem; }
+  main h4 { font-size: 1.9rem; }
+
+  figcaption { font-size: 24px; }
+  footer { font-size: 1.55rem; }
+  time { font-size: 17px; }
+  mark { font-size: 18px; }
+  table { font-size: 24px; }
 }
