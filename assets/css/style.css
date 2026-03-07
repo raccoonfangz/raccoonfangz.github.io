@@ -514,7 +514,7 @@ html {
   :root[data-theme="light"],
   :root[data-theme="dark"] {
     --font-scale: 1.6em;
-    --width: 60rem;
+    --width: 61rem;
   }
 
   .site-header .header-title h1 { font-size: 1.7rem; }
