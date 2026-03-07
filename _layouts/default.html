@@ -47,56 +47,110 @@
 </main>
 
 <footer>
-  <button id="theme-toggle">
-    <img id="theme-icon" src="/images/moon-symbol.png" alt="Moon">
-  </button>
+<button id="theme-toggle">
+  <img id="theme-icon" src="https://i.ibb.co/XxRH03ny/icons8-moon-symbol-30-2.png" alt="Moon" />
+</button>
 
-  <div>
-    <a href="https://notbyai.fyi" target="_blank">
-      <img src="/images/notbyaibadge.png" alt="Written by Human Not by AI" class="not-by-ai-badge">
-    </a>
-  </div>
+<div class="not-by-ai-badge-container">
+  <a href="https://notbyai.fyi" target="_blank" class="not-by-ai-badge">
+    <img src="https://i.ibb.co/rq6YHb8/Written-By-a-Human-Not-By-AI-Badge-white-2x.png"
+         alt="Written by Human Not by AI">
+  </a>
+</div>
 
-  <div>
-    <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/"
-       target="_blank"
-       rel="license noopener noreferrer"
-       style="display:inline-flex; gap:0.2em; align-items:center; text-decoration:none;">
-      <img src="https://mirrors.creativecommons.org/presskit/icons/cc.svg" alt="CC" class="cc-icon">
-      <img src="https://mirrors.creativecommons.org/presskit/icons/by.svg" alt="BY" class="cc-icon">
-      <img src="https://mirrors.creativecommons.org/presskit/icons/nc.svg" alt="NC" class="cc-icon">
-      <img src="https://mirrors.creativecommons.org/presskit/icons/sa.svg" alt="SA" class="cc-icon">
-    </a>
-  </div>
+<div style="text-align:center; margin:2px 0;">
+  <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/"
+     target="_blank"
+     rel="license noopener noreferrer"
+     style="display:inline-flex; gap:0.2em; justify-content:center; align-items:center;">
+    <img src="https://mirrors.creativecommons.org/presskit/icons/cc.svg" alt="CC" class="cc-icon">
+    <img src="https://mirrors.creativecommons.org/presskit/icons/by.svg" alt="BY" class="cc-icon">
+    <img src="https://mirrors.creativecommons.org/presskit/icons/nc.svg" alt="NC" class="cc-icon">
+    <img src="https://mirrors.creativecommons.org/presskit/icons/sa.svg" alt="SA" class="cc-icon">
+  </a>
+</div>
 
-  <div class="collapsible">
-    <span class="arrow">▼</span> Webrings
-  </div>
-  <div id="webrings" style="max-height:0; overflow:hidden; transition:max-height 0.3s ease;">
-    <p style="margin:2px 0;">
-      <a href="https://sg.kamiscorner.xyz/webring/previous.php?url=https://racc.blog">←</a>
-      <a href="https://sg.kamiscorner.xyz/webring/random.php">simplechats webring</a>
-      <a href="https://sg.kamiscorner.xyz/webring/next.php?url=https://racc.blog">→</a>
-    </p>
-    <p style="margin:2px 0;">
-      <a href="https://webring.bucketfish.me/redirect.html?to=prev&amp;name=racc.blog">←</a>
-      <a href="https://webring.bucketfish.me">bucket webring</a>
-      <a href="https://webring.bucketfish.me/redirect.html?to=next&amp;name=racc.blog">→</a>
-    </p>
-    <p style="margin:2px 0;">
-      <a href="https://keithhacks.cyou/furryring.php?prev=racc.blog">←</a>
-      <a href="https://keithhacks.cyou/furryring.php">furryring</a>
-      <a href="https://keithhacks.cyou/furryring.php?next=racc.blog">→</a>
-    </p>
-  </div>
+<div class="collapsible">
+  <span class="arrow down">▼</span> Webrings
+</div>
 
-  <span style="font-size:0.6em; margin-top:0px;">&copy; {{ site.time | date: "%Y" }} {{ site.title }}.</span>
-</footer>
+<div class="content" id="webrings" style="max-height:0; overflow:hidden; transition:max-height 0.3s ease;">
 
-<img src="/images/character.PNG" id="corner-character" alt="Character">
-<div id="character-message" style="display:none;">
+  <p style="margin:2px 0;">
+    <a href="https://sg.kamiscorner.xyz/webring/previous.php?url=https://racc.blog">←</a>
+    <a href="https://sg.kamiscorner.xyz/webring/random.php">simplechats webring</a>
+    <a href="https://sg.kamiscorner.xyz/webring/next.php?url=https://racc.blog">→</a>
+  </p>
+
+  <p style="margin:2px 0;">
+    <a href="https://webring.bucketfish.me/redirect.html?to=prev&amp;name=racc.blog">←</a>
+    <a href="https://webring.bucketfish.me">bucket webring</a>
+    <a href="https://webring.bucketfish.me/redirect.html?to=next&amp;name=racc.blog">→</a>
+  </p>
+
+  <p style="margin:2px 0;">
+    <a href="https://keithhacks.cyou/furryring.php?prev=racc.blog">←</a>
+    <a href="https://keithhacks.cyou/furryring.php">furryring</a>
+    <a href="https://keithhacks.cyou/furryring.php?next=racc.blog">→</a>
+  </p>
+
+</div>
+
+<img src="https://raccoonfangz.github.io/images/character.PNG" id="corner-character" alt="Character">
+
+<div id="character-message" style="display: none;">
   <span id="message-text"></span>
 </div>
+
+<style>
+#theme-toggle {
+  margin-left: auto;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+#theme-toggle img {
+  vertical-align: middle;
+  width: 18px;
+  height: 18px;
+  position: relative;
+  top: -5px;
+}
+
+.not-by-ai-badge img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+}
+
+.collapsible {
+  text-align: center;
+  cursor: pointer;
+  font-weight: bold;
+  margin: 5px 0;
+  font-size: 0.85em;
+}
+
+.arrow {
+  display: inline-block;
+  transition: transform 0.3s ease;
+  margin-right: 4px;
+  font-size: 0.85em;
+}
+
+.content {
+  text-align: center;
+  font-size: 0.85em;
+}
+
+div p a {
+  margin: 0 3px;
+  text-decoration: none;
+}
+</style>
 
 <script>
 const savedTheme = localStorage.getItem('theme') || 'dark';
@@ -114,28 +168,26 @@ document.getElementById('theme-toggle').addEventListener('click', () => {
 function updateIcon(theme){
   const icon = document.getElementById('theme-icon');
   if(theme === 'light'){
-    icon.src = '/images/moon-symbol.png';
+    icon.src = 'https://i.ibb.co/XxRH03ny/icons8-moon-symbol-30-2.png';
     icon.alt = 'Moon';
   } else {
-    icon.src = '/images/sun-symbol.png';
+    icon.src = 'https://i.ibb.co/5h3gtK1X/icons8-sun-30-2.png';
     icon.alt = 'Sun';
   }
 }
 
 const collapsible = document.querySelector('.collapsible');
-if(collapsible){
-  collapsible.addEventListener('click', () => {
-    const content = document.getElementById('webrings');
-    const arrow = collapsible.querySelector('.arrow');
-    if(content.style.maxHeight && content.style.maxHeight !== "0px"){
-      content.style.maxHeight = "0px";
-      arrow.style.transform = "rotate(0deg)";
-    } else {
-      content.style.maxHeight = content.scrollHeight + "px";
-      arrow.style.transform = "rotate(180deg)";
-    }
-  });
-}
+collapsible.addEventListener('click', () => {
+  const content = document.getElementById('webrings');
+  const arrow = collapsible.querySelector('.arrow');
+  if(content.style.maxHeight && content.style.maxHeight !== "0px"){
+    content.style.maxHeight = "0px";
+    arrow.style.transform = "rotate(0deg)";
+  } else {
+    content.style.maxHeight = content.scrollHeight + "px";
+    arrow.style.transform = "rotate(180deg)";
+  }
+});
 
 (function(){
   function addTimeToPostDates(){
@@ -173,12 +225,32 @@ const messageBox = document.getElementById("character-message");
 const messageText = document.getElementById("message-text");
 
 const messages = [
-  "Hi.","*pokes you back*","yap yap","What's up","Oh. Again?",
-  "Please, stop bothering me","...","...","This is becoming a pattern.",
-  "Beware","All this content on my site","and yet,","you choose to poke me",
-  "Last warning!!","3","2","1","*BOOM*","...","...","...",
-  "Are you proud of yourself?","Must be so fun clicking, no?",
-  "There is no secret message","nor a secret game or anything","I SWEAR",
+  "Hi.",
+  "*pokes you back*",
+  "yap yap",
+  "What's up",
+  "Oh. Again?",
+  "Please, stop bothering me",
+  "...",
+  "...",
+  "This is becoming a pattern.",
+  "Beware",
+  "All this content on my site",
+  "and yet,",
+  "you choose to poke me",
+  "Last warning!!",
+  "3",
+  "2",
+  "1",
+  "*BOOM*",
+  "...",
+  "...",
+  "...",
+  "Are you proud of yourself?",
+  "Must be so fun clicking, no?",
+  "There is no secret message",
+  "nor a secret game or anything",
+  "I SWEAR",
 ];
 
 let index = 0;
@@ -191,17 +263,22 @@ function showMessage(msg){
   messageText.textContent = msg ?? messages[index];
   messageBox.style.display = "block";
   if(!msg) index = (index + 1) % messages.length;
+
   if(msg !== "*yawn*"){
     character.classList.add("squish");
-    setTimeout(()=>character.classList.remove("squish"),150);
+    setTimeout(() => character.classList.remove("squish"), 150);
   }
-  hideTimeout = setTimeout(()=>messageBox.style.display="none",
-                            msg === "*yawn*" ? 1500 : 1200);
+
+  hideTimeout = setTimeout(
+    () => messageBox.style.display = "none",
+    msg === "*yawn*" ? 1500 : 1200
+  );
 }
 
 (function(){
   const hour = new Date().getHours();
   const shown = sessionStorage.getItem("nightMessageShown");
+
   if(hour >= 1 && hour < 4 && !shown){
     sessionStorage.setItem("nightMessageShown","true");
     window.addEventListener("load", () => {
@@ -209,20 +286,24 @@ function showMessage(msg){
       messageText.textContent = "Shouldn't you be asleep?";
       messageBox.style.display = "block";
       character.classList.add("squish");
-      setTimeout(()=>character.classList.remove("squish"),150);
-      hideTimeout = setTimeout(()=>messageBox.style.display="none",3100);
+      setTimeout(() => character.classList.remove("squish"), 150);
+      hideTimeout = setTimeout(
+        () => messageBox.style.display = "none",
+        3100
+      );
     });
   }
 })();
 
 function resetInactivityTimer(){
   clearTimeout(inactivityTimeout);
-  inactivityTimeout = setTimeout(()=>showMessage("*yawn*"),35000);
+  inactivityTimeout = setTimeout(() => showMessage("*yawn*"), 35000);
 }
 
 ["click","scroll","keydown","mousemove"].forEach(evt =>
   document.addEventListener(evt, resetInactivityTimer)
 );
+
 resetInactivityTimer();
 
 character.addEventListener("click", () => {
@@ -242,6 +323,7 @@ document.addEventListener("mouseup", () => {
   }
 });
 </script>
+
 
 </body>
 </html>
