@@ -58,7 +58,7 @@
   </a>
 </div>
 
-<div style="text-align:center; margin:2px 0;">
+<div style="text-align:center; margin:0;">
   <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/"
      target="_blank"
      rel="license noopener noreferrer"
@@ -69,8 +69,9 @@
     <img src="https://mirrors.creativecommons.org/presskit/icons/sa.svg" alt="SA" class="cc-icon">
   </a>
 </div>
-  
-  
+
+<div style="text-align:center; margin:0; font-size:0.6em;">© {{ site.time | date: "%Y" }} {{ site.title }}.</div>
+
 <div class="collapsible">
   <span class="arrow down">▼</span> Webrings
 </div>
@@ -97,8 +98,6 @@
 
 </div>
 
-<div style="text-align:center; margin:2px 0; font-size:0.6em;">© {{ site.time | date: "%Y" }} {{ site.title }}.</div>
-
 <img src="https://raccoonfangz.github.io/images/character.PNG" id="corner-character" alt="Character">
 
 <div id="character-message" style="display: none;">
@@ -119,6 +118,12 @@
   height: 18px;
   position: relative;
   top: -5px;
+}
+
+.not-by-ai-badge-container {
+  margin: 0;
+  padding: 0;
+  line-height: 0;
 }
 
 .not-by-ai-badge img {
