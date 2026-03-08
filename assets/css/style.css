@@ -208,6 +208,10 @@ mark {
   border-color: #e4a320;
 }
 
+:root[data-theme="dark"] {
+  scrollbar-color: #e4a320 #e4a320;
+}
+
 /*==LAYOUT==*/
 
 .site-header,
