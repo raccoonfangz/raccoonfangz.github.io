@@ -29,11 +29,12 @@ permalink: /buttons-badges/
 
 <div class="grid">
   <a href="https://ida.puwulsewave.gay"><img src="/images/buttons/ida.gif"></a>
-  <img src="/images/buttons/bisexual.webp">
+  <a href="https://lunasn0wfall.neocities.org"><img src="/images/buttons/pawjob.gif"></a>
+  <img src="/images/buttons/bisexual.png">
   <a href="https://www.nationalgeographic.com"><img src="/images/buttons/national_geographics.gif"></a>
   <a href="https://www.goeuropean.org"><img src="/images/buttons/buyfromeu.gif"></a>
-  <a href="https://european-union.europa.eu/index_en"><img src="/images/buttons/eu-1.webp"></a>
-  <a href="https://dillo-browser.github.io/pec/"><img src="/images/buttons/class-a.webp"></a>
+  <a href="https://european-union.europa.eu/index_en"><img src="/images/buttons/eu-1.png"></a>
+  <a href="https://dillo-browser.github.io/pec/"><img src="/images/buttons/class-a.png"></a>
   <img src="/images/buttons/trans-rights-now.webp">
   <img src="/images/buttons/antinazi.gif">
   <img src="/images/buttons/apocalypse_now.gif">
