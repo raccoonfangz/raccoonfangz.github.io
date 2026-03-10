@@ -18,5 +18,6 @@ a raccoon inside ourselves⠀
           `-"`-"  " "
                                                       ➣༝𖠣༝𖠣༝𖠣֊ᐷ⠀⠀⠀
 <strong><a href="/about">About this blog</a></strong>
+<strong><a href="/buttons-badgest">Buttons and badges</a></strong>
   </pre>
 </div>
