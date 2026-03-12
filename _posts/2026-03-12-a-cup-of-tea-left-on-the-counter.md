@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 
+title: A cup of tea left on the counter
 tags:
   - 2026
 ---
