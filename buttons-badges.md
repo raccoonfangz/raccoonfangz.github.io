@@ -10,18 +10,18 @@ permalink: /buttons-badges/
 <style>
 .grid {
   display: grid;
-  grid-template-columns: repeat(6, auto);
-  gap: 5px ;
+  grid-template-columns: repeat(auto-fit, minmax(88px, 1fr));
+  gap: 5px;
+  max-width: 100%;
 }
-
 .grid img {
   display: block;
   height: 31px;
-  width: 88px;
+  width: 100%;
+  max-width: 88px;
   object-fit: contain;
   border-radius: 0px !important;
 }
-
 .grid a img {
   border: none;
 }
