@@ -51,6 +51,6 @@ permalink: /buttons-badges/
   <a href="https://archive.org"><img src="/images/buttons/archiveorg_preserve.gif"></a>
  <a href="https://www.colawp.com/colas/400/cola467_recipe.html"><img src="/images/buttons/coke.gif"></a>
  <img src="/images/buttons/drpepper_powered.gif">
- <img src="/images/buttons/worldisa.webp" style="width: 239px !important; height: 61px !important; max-width: none !important;">
+ <img src="/images/buttons/worldisa.png" style="width: 239px !important; height: 61px !important; max-width: none !important;">
 
 </div>
