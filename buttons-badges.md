@@ -44,6 +44,11 @@ permalink: /buttons-badges/
   <a href="https://1999x.neocities.org"><img src="/images/buttons/1999x.gif"></a>
   <a href="https://mewkittyraccoonstorage.neocities.org"><img src="/images/buttons/mewkittyraccoonstorage.webp"></a>
   <a href="https://maw.neocities.org"><img src="/images/buttons/maw88x31.gif"></a>
+  <a href="https://ribo.zone/"><img src="/images/buttons/ribozone.gif"></a>
+  <a href="https://doqmeat.com"><img src="/images/buttons/doqmeat.png"></a>
+  <a href="https://sixey.es/"><img src="/images/buttons/sixeyes.gif"></a>
+  <a href="https://sweetfish.site/"><img src="/images/buttons/button3.png"></a>
+  <a href="https://kero.gay/"><img src="/images/buttons/loaf_background.png"></a>
   <img src="/images/buttons/bisexual.png">
   <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/"><img src="/images/buttons/by-nc-sa.png"></a>
   <img src="/images/buttons/not_intended_for_children_02.jpg">
