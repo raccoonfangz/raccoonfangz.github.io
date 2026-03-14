@@ -42,4 +42,4 @@ More than you will ever know.
 
 <hr>
 
-Enjoyed the article? Subscribe to my <a href="/feed/?type=rss">RSS feed</a> :D
+Enjoyed the article? Subscribe to my [**RSS feed**](/feed/?type=rss⁠) :D
