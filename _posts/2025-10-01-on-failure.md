@@ -22,7 +22,7 @@ But **does it matter**? Should I just give up before the possibility of failing?
 
 I believe that no failure is ultimate. Failure is only a delay, an obstacle between you and your goal, given that you have time.
 
-> **Dum spiro spero (While I breathe, I hope)** :]
+> **Dum spiro spero (While I breathe, I hope)** 
 
 
 
