@@ -5,13 +5,7 @@ permalink: /random-quotes/
 ---
 
 <style>
-/* Hide upvotes completely (button + text) */
-.upvote-button,
-.upvote-count,
-.upvote-button::after {
-    display: none !important;
-}
-
+    
 #quote {
     text-align: center;
     font-size: 1.5rem;
