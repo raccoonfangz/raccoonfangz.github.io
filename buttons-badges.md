@@ -55,7 +55,6 @@ permalink: /buttons-badges/
   <a href="https://www.nationalgeographic.com"><img src="/images/buttons/national_geographics.gif"></a>
   <a href="https://www.goeuropean.org"><img src="/images/buttons/buyfromeu.gif"></a>
   <a href="https://european-union.europa.eu/index_en"><img src="/images/buttons/eu.png"></a> 
-  <a href="https://dillo-browser.github.io/pec/"><img src="/images/buttons/class-A.png"></a>
   <img src="/images/buttons/trans-rights-now.webp">
   <img src="/images/buttons/antinazi.gif">
   <img src="/images/buttons/apocalypse_now.gif">
