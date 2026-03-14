@@ -37,17 +37,23 @@ permalink: /buttons-badges/
   <a href="https://ida.puwulsewave.gay"><img src="/images/buttons/ida.gif"></a>
   <a href="https://lunasn0wfall.neocities.org"><img src="/images/buttons/pawjob.gif"></a>
   <a href="https://ocean-waves.xyz/"><img src="/images/buttons/oceanwaves.gif"></a>
+  <a href="https://1999x.neocities.org"><img src="/images/buttons/1999x.gif"></a>
+  <a href="https://mewkittyraccoonstorage.neocities.org"><img src="/images/buttons/mewkittyraccoonstorage.webp"></a>
+  <a href="https://maw.neocities.org"><img src="/images/buttons/maw88x31.gif"></a>
   <img src="/images/buttons/bisexual.png">
   <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/"><img src="/images/buttons/by-nc-sa.png"></a>
+  <img src="/images/buttons/not_intended_for_children_02.webp"></a>
   <a href="https://www.nationalgeographic.com"><img src="/images/buttons/national_geographics.gif"></a>
   <a href="https://www.goeuropean.org"><img src="/images/buttons/buyfromeu.gif"></a>
   <a href="https://european-union.europa.eu/index_en"><img src="/images/buttons/eu.png"></a> 
   <a href="https://dillo-browser.github.io/pec/"><img src="/images/buttons/class-A.png"></a>
   <img src="/images/buttons/trans-rights-now.webp">
   <img src="/images/buttons/antinazi.gif">
-  <img src="/images/buttons/apocalypse_now.gif">
+  <img src="apocalypse_now.gif">
+  <img src="/images/buttons/athens_academy_7860_hmtna42.gif">
   <img src="/images/buttons/anythingbutwindows.gif">
   <img src="/images/buttons/twopaws.webp">
+  <img src="/images/buttons/capitolhill_7283_img_lonewolf.gif">
   <a href="https://archive.org"><img src="/images/buttons/archiveorg_preserve.gif"></a>
  <a href="https://www.colawp.com/colas/400/cola467_recipe.html"><img src="/images/buttons/coke.gif"></a>
  <img src="/images/buttons/drpepper_powered.gif">
