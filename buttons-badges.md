@@ -4,7 +4,7 @@ title: "Buttons and badges"
 permalink: /buttons-badges/
 ---
 
-## Important notice
+### Important notice
 > By using the following list of hyperlinks, the user expressly acknowledges, understands, and agrees that the provision of said links does not by itself constitute an endorsement, representation, warranty, or guarantee of the accuracy, completeness, legality, or moral character of any content, products, services, or information contained therein, and accordingly, the user assumes sole responsibility and assumes all risks associated with the utilization of said links. This includes, but isn’t limited to, any loss, damage, injury, liability, harm, or hurt feelings arising directly or indirectly from such use.
 
 <style>
