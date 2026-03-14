@@ -31,5 +31,5 @@ Sometimes waiting is progress. <br>
 
 <hr>
 <p align="center">
-Enjoyed the <s>article</s> prose? Subscribe to my <a href="/feed/?type=rss">RSS feed</a> :D
+Enjoyed the article? Subscribe to my [**RSS feed**](/feed/?type=rss⁠) :D
 </p>
