@@ -42,7 +42,7 @@ permalink: /buttons-badges/
   <a href="https://maw.neocities.org"><img src="/images/buttons/maw88x31.gif"></a>
   <img src="/images/buttons/bisexual.png">
   <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/"><img src="/images/buttons/by-nc-sa.png"></a>
-  <img src="/images/buttons/not_intended_for_children_02.webp"></a>
+  <img src="/images/buttons/not_intended_for_children_02.jpg"></a>
   <a href="https://www.nationalgeographic.com"><img src="/images/buttons/national_geographics.gif"></a>
   <a href="https://www.goeuropean.org"><img src="/images/buttons/buyfromeu.gif"></a>
   <a href="https://european-union.europa.eu/index_en"><img src="/images/buttons/eu.png"></a> 
