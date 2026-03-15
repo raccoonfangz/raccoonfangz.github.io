@@ -61,8 +61,8 @@ permalink: /buttons-badges/
   <img src="/images/buttons/Athens_Academy_7860_hmtna42.gif">
   <img src="/images/buttons/anythingbutwindows.gif">
   <img src="/images/buttons/twopaws.webp">
-  <a href="https://letterboxd.com/Raccoon__/"><img src="https://bear-images.sfo2.cdn.digitaloceanspaces.com/raccoon/letterboxd.webp"></a>
   <img src="/images/buttons/CapitolHill_7283_img_lonewolf.gif">
+  <a href="https://letterboxd.com/Raccoon__/"><img src="/images/buttons/letterboxd.png"></a>
   <a href="https://archive.org"><img src="/images/buttons/internetarchive.png"></a>
  <a href="https://www.colawp.com/colas/400/cola467_recipe.html"><img src="/images/buttons/coke.gif"></a>
  <img src="/images/buttons/drpepper_powered.gif">
