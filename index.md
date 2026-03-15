@@ -35,4 +35,4 @@ You can reach out to me via [**email**](mailto:ash.pacelt@gmail.com)
 
 ---
 
-Subscribe to my [**RSS feed**](/feed/?type=rss) :D
+Subscribe to my [**RSS feed**](/feed/rss.xml) :D
