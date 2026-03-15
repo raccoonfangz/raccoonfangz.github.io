@@ -309,7 +309,7 @@ footer .footer-note mark {
 
 [data-theme="dark"] main strong a:hover,
 [data-theme="dark"] main a strong:hover {
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 /*==BLOG_POSTS_LIST==*/
