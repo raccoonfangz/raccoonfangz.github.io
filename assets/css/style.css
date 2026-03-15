@@ -467,6 +467,7 @@ main p a,
 main li:not(.blog-posts li) a,
 main blockquote a {
   position: relative;
+  text-decoration: none !important;
 }
 
 main p a::after,
