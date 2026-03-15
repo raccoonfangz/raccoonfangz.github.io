@@ -15,8 +15,8 @@
 
 :root[data-theme="dark"] {
   --width: 50rem;
-  --font-main: system-ui, sans-serif;
-  --font-secondary: system-ui, sans-serif;
+  --font-main: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --font-secondary: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   --font-scale: 1.25em;
   --background-color: #0D0D0D;
   --heading-color: #f5f5f5;
@@ -28,10 +28,6 @@
 }
 
 /*==BASE==*/
-
-html {
-  scroll-behavior: smooth;
-}
 
 body {
   font-family: var(--font-secondary);
@@ -56,12 +52,12 @@ body::before {
   height: 100%;
   z-index: 0;
   pointer-events: none;
+  background-color: transparent;
   background-image:
     linear-gradient(to right, rgba(0,0,0,0.05) 1px, transparent 1px),
     linear-gradient(to bottom, rgba(0,0,0,0.05) 1px, transparent 1px);
   background-size: 37px 37px;
   background-position: -5px 0px;
-  background-color: transparent;
 }
 
 :root[data-theme="dark"] body::before {
@@ -77,6 +73,10 @@ a {
   cursor: pointer;
 }
 
+a:hover {
+  text-decoration: none;
+}
+
 button {
   border: 0;
   background: inherit;
@@ -89,7 +89,12 @@ img {
   border-radius: 10px;
   object-fit: contain;
   margin: 0 auto;
+}
+
+main img {
   display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 figcaption {
@@ -142,7 +147,7 @@ main h4 {
 
 .title:not(.header-title),
 p.tags {
-  display: none;
+  display: none !important;
 }
 
 code {
@@ -182,7 +187,7 @@ time {
   border: 1px solid #222;
   margin-bottom: 3.5px;
   margin-right: 6px;
-  font-style: normal;
+  font-style: normal !important;
 }
 
 [data-theme="dark"] time {
@@ -218,13 +223,15 @@ main {
   z-index: 1;
   background-color: var(--background-color);
   border: 1.5px solid rgba(0,0,0,0.12);
+  box-shadow: none;
   max-width: var(--width);
-  margin: 0 auto;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 :root[data-theme="dark"] .site-header,
 :root[data-theme="dark"] main {
-  border-color: var(--dark-border-color);
+  border: 1.5px solid var(--dark-border-color);
 }
 
 .site-header {
@@ -232,14 +239,19 @@ main {
   align-items: center;
   justify-content: space-between;
   padding: 18px 25px;
+  border-bottom: none;
   border-radius: 14px 14px 0 0;
   margin-top: 5px;
 }
 
 main {
-  padding: 5px 25px 25px;
+  padding: 5px 25px 25px 25px;
   border-radius: 0 0 14px 14px;
   margin-bottom: 5px;
+}
+
+:root[data-theme="dark"] main {
+  background-color: var(--background-color);
 }
 
 footer {
@@ -249,7 +261,7 @@ footer {
   flex-direction: column;
   align-items: center;
   gap: 5px;
-  padding: 10px 25px;
+  padding: 10px 25px !important;
   text-align: center;
   line-height: 1.0;
   background-color: rgba(253, 253, 253, 0.25);
@@ -267,18 +279,18 @@ footer p {
 }
 
 footer span:has(.bear) {
-  font-size: 0.7rem;
+  font-size: 0.7rem !important;
 }
 
 footer span:has(.bear) .bear {
-  font-size: inherit;
+  font-size: inherit !important;
 }
 
 footer .footer-note mark {
   padding: 1px 2px;
   border-radius: 2px;
   background-color: #EBA708;
-  border-color: #EBA708;
+  border: 1px solid #EBA708;
 }
 
 /*==NAV==*/
@@ -309,7 +321,7 @@ footer .footer-note mark {
 
 [data-theme="dark"] main strong a:hover,
 [data-theme="dark"] main a strong:hover {
-  text-decoration: none;
+  text-decoration: underline;
 }
 
 /*==BLOG_POSTS_LIST==*/
@@ -330,8 +342,8 @@ ul.blog-posts li span {
 }
 
 ul.blog-posts li a {
-  display: inline-block;
   transition: transform 0.2s ease;
+  display: inline-block;
 }
 
 ul.blog-posts li a:hover {
@@ -372,7 +384,7 @@ table tr:nth-child(even) {
 @media (prefers-color-scheme: dark), :root[data-theme="dark"] {
   table th,
   table td {
-    border-color: #555;
+    border: 1px solid #555;
   }
 
   table th {
@@ -423,7 +435,7 @@ table tr:nth-child(even) {
   box-shadow: 0 2px 6px rgba(0,0,0,0.2);
 }
 
-/*==BADGES==*/
+/*==NOT_BY_AI_BADGE==*/
 
 .not-by-ai-badge-wrapper {
   display: flex;
@@ -433,12 +445,13 @@ table tr:nth-child(even) {
 
 .not-by-ai-badge {
   display: block;
+  border-radius: 0 !important;
   padding-bottom: 5px;
 }
 
 .not-by-ai-badge img {
-  width: auto;
-  height: auto;
+  width: auto !important;
+  height: auto !important;
   max-width: 115px;
   max-height: 60px;
   object-fit: contain;
@@ -446,9 +459,12 @@ table tr:nth-child(even) {
   border-radius: 0 !important;
 }
 
+/*==CC_ICONS==*/
+
 .cc-icon {
   width: 1em;
   height: 1em;
+  border-radius: 0 !important;
 }
 
 /*==ANIMATION==*/
@@ -462,30 +478,30 @@ table tr:nth-child(even) {
   100% { transform: scale(1, 1); }
 }
 
-/*==LINK_UNDERLINES==*/
+/*==MOBILE==*/
 
-main p a,
-main li:not(.blog-posts li) a,
-main blockquote a {
-  text-decoration: underline;
-  text-decoration-color: transparent;
-  text-decoration-thickness: 2px;
-  text-underline-offset: 3px;
-  transition: text-decoration-color 0.15s cubic-bezier(0.4, 0, 0.2, 1);
-  position: relative;
-  text-decoration: none !important;
+@media (max-width: 600px) {
+  .site-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .site-header .nav-links {
+    margin-top: 8px;
+  }
+
+  .site-header .nav-links a:first-child {
+    margin-left: 0;
+  }
+
+  #corner-character,
+  #character-message {
+    display: none !important;
+  }
 }
 
-main p a:hover,
-main li:not(.blog-posts li) a:hover,
-main blockquote a:hover {
-  text-decoration-color: #EBA708;
-}
-
-main p a:visited,
-main li:not(.blog-posts li) a:visited,
-main blockquote a:visited {
-  text-decoration: none;
+html {
+  scroll-behavior: smooth;
 }
 
 /*==BIGGER SCREENS==*/
@@ -501,10 +517,10 @@ main blockquote a:visited {
   .site-header .nav-links a { font-size: 1.3rem; }
   .upvote-button { font-size: 1.15rem; }
 
-  main h1 { font-size: 2.6rem; }
-  main h2 { font-size: 2.3rem; }
-  main h3 { font-size: 2rem; }
-  main h4 { font-size: 1.6rem; }
+  main h1 { font-size: 2.6rem !important; }
+  main h2 { font-size: 2.3rem !important; }
+  main h3 { font-size: 2rem !important; }
+  main h4 { font-size: 1.6rem !important; }
 
   figcaption { font-size: 20px; }
   footer { font-size: 1.3rem; }
@@ -512,7 +528,7 @@ main blockquote a:visited {
   mark { font-size: 15px; }
   table { font-size: 20px; }
 
-  #theme-toggle img { width: 20px; height: 20px; }
+  #theme-toggle img { width: 20px !important; height: 20px !important; }
 
   #corner-character { width: 160px; }
   #character-message {
@@ -535,10 +551,10 @@ main blockquote a:visited {
   .site-header .nav-links a { font-size: 1.55rem; }
   .upvote-button { font-size: 1.15rem; }
 
-  main h1 { font-size: 3.2rem; }
-  main h2 { font-size: 3.0rem; }
-  main h3 { font-size: 2.4rem; }
-  main h4 { font-size: 1.9rem; }
+  main h1 { font-size: 3.2rem !important; }
+  main h2 { font-size: 3.0rem !important; }
+  main h3 { font-size: 2.4rem !important; }
+  main h4 { font-size: 1.9rem !important; }
 
   figcaption { font-size: 24px; }
   footer { font-size: 1.55rem; }
@@ -546,7 +562,7 @@ main blockquote a:visited {
   mark { font-size: 18px; }
   table { font-size: 24px; }
 
-  #theme-toggle img { width: 26px; height: 26px; }
+  #theme-toggle img { width: 26px !important; height: 26px !important; }
 
   #corner-character { width: 200px; }
   #character-message {
@@ -556,9 +572,42 @@ main blockquote a:visited {
   }
 
   .not-by-ai-badge img {
-    max-width: 150px;
-    max-height: 55px;
+    max-width: 150px !important;
+    max-height: 55px !important;
   }
 
   .cc-icon { width: 1.2em; height: 1.2em; }
+}
+
+main p a,
+main li:not(.blog-posts li) a,
+main blockquote a {
+  position: relative;
+}
+
+main p a::after,
+main li:not(.blog-posts li) a::after,
+main blockquote a::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: #EBA708;
+  transform: scaleX(0);
+  transform-origin: center;
+  transition: transform 0.15s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+main p a:hover::after,
+main li:not(.blog-posts li) a:hover::after,
+main blockquote a:hover::after {
+  transform: scaleX(1);
+}
+
+main p a:visited,
+main li:not(.blog-posts li) a:visited,
+main blockquote a:visited {
+  text-decoration: none;
 }
