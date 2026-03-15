@@ -463,13 +463,12 @@ table tr:nth-child(even) {
 }
 
 /*==LINK_UNDERLINES==*/
-
 main p a,
 main li:not(.blog-posts li) a,
 main blockquote a {
   position: relative;
 }
- 
+
 main p a::after,
 main li:not(.blog-posts li) a::after,
 main blockquote a::after {
@@ -484,44 +483,18 @@ main blockquote a::after {
   transform-origin: center;
   transition: transform 0.15s cubic-bezier(0.4, 0, 0.2, 1);
 }
- 
-main p a:hover,
-main li:not(.blog-posts li) a:hover,
-main blockquote a:hover {
-  text-decoration: none;
-}
 
 main p a:hover::after,
 main li:not(.blog-posts li) a:hover::after,
 main blockquote a:hover::after {
   transform: scaleX(1);
 }
- 
+
 main p a:visited,
 main li:not(.blog-posts li) a:visited,
 main blockquote a:visited {
   text-decoration: none;
-}
-
-/*==MOBILE==*/
-
-@media (max-width: 600px) {
-  .site-header {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  .site-header .nav-links {
-    margin-top: 8px;
-  }
-
-  .site-header .nav-links a:first-child {
-    margin-left: 0;
-  }
-
-  #corner-character,
-  #character-message {
-    display: none;
+}one;
   }
 }
 
