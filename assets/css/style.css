@@ -443,6 +443,7 @@ table tr:nth-child(even) {
   max-height: 60px;
   object-fit: contain;
   display: block;
+  border-radius: 0 !important;
 }
 
 .cc-icon {
@@ -468,7 +469,7 @@ main li:not(.blog-posts li) a,
 main blockquote a {
   position: relative;
 }
-
+ 
 main p a::after,
 main li:not(.blog-posts li) a::after,
 main blockquote a::after {
@@ -483,13 +484,13 @@ main blockquote a::after {
   transform-origin: center;
   transition: transform 0.15s cubic-bezier(0.4, 0, 0.2, 1);
 }
-
+ 
 main p a:hover::after,
 main li:not(.blog-posts li) a:hover::after,
 main blockquote a:hover::after {
   transform: scaleX(1);
 }
-
+ 
 main p a:visited,
 main li:not(.blog-posts li) a:visited,
 main blockquote a:visited {
