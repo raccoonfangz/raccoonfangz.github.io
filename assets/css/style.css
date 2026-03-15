@@ -463,40 +463,27 @@ table tr:nth-child(even) {
 }
 
 /*==LINK_UNDERLINES==*/
+
 main p a,
 main li:not(.blog-posts li) a,
 main blockquote a {
-  position: relative;
-  text-decoration: none !important;
+  text-decoration: underline;
+  text-decoration-color: transparent;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 3px;
+  transition: text-decoration-color 0.15s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-main p a::after,
-main li:not(.blog-posts li) a::after,
-main blockquote a::after {
-  content: '';
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 2px;
-  background: #EBA708;
-  transform: scaleX(0);
-  transform-origin: center;
-  transition: transform 0.15s cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-main p a:hover::after,
-main li:not(.blog-posts li) a:hover::after,
-main blockquote a:hover::after {
-  transform: scaleX(1);
+main p a:hover,
+main li:not(.blog-posts li) a:hover,
+main blockquote a:hover {
+  text-decoration-color: #EBA708;
 }
 
 main p a:visited,
 main li:not(.blog-posts li) a:visited,
 main blockquote a:visited {
   text-decoration: none;
-}one;
-  }
 }
 
 /*==BIGGER SCREENS==*/
