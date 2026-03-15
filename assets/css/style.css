@@ -485,6 +485,12 @@ main blockquote a::after {
   transition: transform 0.15s cubic-bezier(0.4, 0, 0.2, 1);
 }
  
+main p a:hover,
+main li:not(.blog-posts li) a:hover,
+main blockquote a:hover {
+  text-decoration: none;
+}
+
 main p a:hover::after,
 main li:not(.blog-posts li) a:hover::after,
 main blockquote a:hover::after {
