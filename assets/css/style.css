@@ -191,8 +191,8 @@ time {
 }
 
 [data-theme="dark"] time {
-  background-color: #e4a320;
-  border-color: #e4a320;
+  background-color: #EBA708;
+  border-color: #EBA708;
 }
 
 mark {
@@ -207,12 +207,12 @@ mark {
 }
 
 [data-theme="dark"] mark {
-  background-color: #e4a320;
-  border-color: #e4a320;
+  background-color: #EBA708;
+  border-color: #EBA708;
 }
 
 :root[data-theme="dark"] {
-  scrollbar-color: #e4a320 #e4a320;
+  scrollbar-color: #EBA708 #EBA708;
 }
 
 /*==LAYOUT==*/
@@ -289,8 +289,8 @@ footer span:has(.bear) .bear {
 footer .footer-note mark {
   padding: 1px 2px;
   border-radius: 2px;
-  background-color: #e4a320;
-  border: 1px solid #e4a320;
+  background-color: #EBA708;
+  border: 1px solid #EBA708;
 }
 
 /*==NAV==*/
@@ -316,7 +316,7 @@ footer .footer-note mark {
 
 [data-theme="dark"] main strong a,
 [data-theme="dark"] main a strong {
-  color: #e4a320;
+  color: #EBA708;
 }
 
 [data-theme="dark"] main strong a:hover,
