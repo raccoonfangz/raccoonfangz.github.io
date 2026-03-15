@@ -605,3 +605,9 @@ main li:not(.blog-posts li) a:hover::after,
 main blockquote a:hover::after {
   transform: scaleX(1);
 }
+
+main p a:visited,
+main li:not(.blog-posts li) a:visited,
+main blockquote a:visited {
+  text-decoration: none;
+}
