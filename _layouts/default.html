@@ -106,7 +106,7 @@
 
 <div style="font-size:0.55em;">© {{ site.time | date: "%Y" }} {{ site.title }}.</div>
 
-<img src="https://raccoonfangz.github.io/images/character.PNG" id="corner-character" alt="Character">
+<img src="/images/character.PNG" id="corner-character" alt="Character">
 
 <div id="character-message" style="display: none;">
   <span id="message-text"></span>
@@ -228,8 +228,8 @@ collapsible.addEventListener('click', () => {
       const timeStr = `${hours}:${minutesStr} ${ampm}`;
 
       const currentDateText = timeEl.innerText.trim();
-      if(isToday) timeEl.innerText = `Today • ${timeStr}`;
-      else timeEl.innerText = `${currentDateText} • ${timeStr}`;
+      if(isToday) timeEl.innerText = `Today`;
+      else timeEl.innerText = `${currentDateText}`;
     });
   }
 
