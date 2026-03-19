@@ -5,3 +5,4 @@ url: "https://raccoonfangz.github.io"
 plugins:
   - jekyll-feed
   - jekyll-sitemap
+  - jekyll-seo-tag
