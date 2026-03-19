@@ -4,3 +4,4 @@ theme: null
 url: "https://raccoonfangz.github.io"
 plugins:
   - jekyll-feed
+  - jekyll-sitemap
