@@ -611,8 +611,3 @@ main li:not(.blog-posts li) a:visited,
 main blockquote a:visited {
   text-decoration: none;
 }
-
-:focus-visible {
-  outline: 2px solid currentColor;
-  outline-offset: 2px;
-}
