@@ -36,7 +36,7 @@
   <nav class="nav-links">
     <a href="{{ '/about-me/' | relative_url }}">About me</a>
     <a href="{{ '/posts/' | relative_url }}">Posts</a>
-    <a href="{{ '/secret/' | relative_url }}">🦝</a>
+    <a href="{{ '/secret/' | relative_url }}" aria-label="Secret page">🦝</a>
   </nav>
 </header>
 
@@ -56,7 +56,7 @@
 <div class="not-by-ai-badge-container">
   <a href="https://notbyai.fyi" target="_blank" class="not-by-ai-badge">
     <img src="/images/NO-AI-badge.png"
-         alt="Written by Human Not by AI badge">
+         alt="Written by Human, Not by AI badge">
   </a>
 </div>
 
@@ -64,51 +64,50 @@
   <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/"
      target="_blank"
      rel="license noopener noreferrer"
+     aria-label="Creative Commons Attribution NonCommercial ShareAlike 4.0 license"
      style="display:inline-flex; gap:0.2em; justify-content:center; align-items:center;">
-    <img src="https://mirrors.creativecommons.org/presskit/icons/cc.svg" class="cc-icon">
-    <img src="https://mirrors.creativecommons.org/presskit/icons/by.svg" alt="copyright attribution icon" class="cc-icon">
-    <img src="https://mirrors.creativecommons.org/presskit/icons/nc.svg" alt="copyright non-commercial icon" class="cc-icon">
-    <img src="https://mirrors.creativecommons.org/presskit/icons/sa.svg" alt="copyright share-alike icon" class="cc-icon">
+    <img src="https://mirrors.creativecommons.org/presskit/icons/cc.svg" alt="" class="cc-icon">
+    <img src="https://mirrors.creativecommons.org/presskit/icons/by.svg" alt="" class="cc-icon">
+    <img src="https://mirrors.creativecommons.org/presskit/icons/nc.svg" alt="" class="cc-icon">
+    <img src="https://mirrors.creativecommons.org/presskit/icons/sa.svg" alt="" class="cc-icon">
   </a>
 </div>
 
-<div class="collapsible" role="button" aria-expanded="false" aria-label="expand webrings">▼</div>
-  <span class="arrow down">▼</span> Webrings
-</div>
+<div class="collapsible" role="button" tabindex="0" aria-expanded="false" aria-label="Expand webrings">▼ Webrings</div>
 
 <div class="content" id="webrings" style="max-height:0; overflow:hidden; transition:max-height 0.3s ease;">
 
   <p style="margin:2px 0;">
-    <a href="https://sg.kamiscorner.xyz/webring/previous.php?url=https://racc.blog">←</a>
+    <a href="https://sg.kamiscorner.xyz/webring/previous.php?url=https://racc.blog" aria-label="simplechats webring previous">←</a>
     <a href="https://sg.kamiscorner.xyz/webring/random.php">simplechats webring</a>
-    <a href="https://sg.kamiscorner.xyz/webring/next.php?url=https://racc.blog">→</a>
+    <a href="https://sg.kamiscorner.xyz/webring/next.php?url=https://racc.blog" aria-label="simplechats webring next">→</a>
   </p>
 
   <p style="margin:2px 0;">
-    <a href="https://webring.bucketfish.me/redirect.html?to=prev&amp;name=racc.blog">←</a>
+    <a href="https://webring.bucketfish.me/redirect.html?to=prev&amp;name=racc.blog" aria-label="bucket webring previous">←</a>
     <a href="https://webring.bucketfish.me">bucket webring</a>
-    <a href="https://webring.bucketfish.me/redirect.html?to=next&amp;name=racc.blog">→</a>
-  </p>
-
-<p style="margin:2px 0;">
-    <a href="https://www.beepbird.net/webring/prev?url=https://racc.blog">←</a>
-    <a href="https://www.beepbird.net/webring/index.html">focus first webring</a>
-    <a href="https://www.beepbird.net/webring/next?url=https://racc.blog">→</a>
+    <a href="https://webring.bucketfish.me/redirect.html?to=next&amp;name=racc.blog" aria-label="bucket webring next">→</a>
   </p>
 
   <p style="margin:2px 0;">
-    <a href="https://keithhacks.cyou/furryring.php?prev=racc.blog">←</a>
+    <a href="https://www.beepbird.net/webring/prev?url=https://racc.blog" aria-label="focus first webring previous">←</a>
+    <a href="https://www.beepbird.net/webring/index.html">focus first webring</a>
+    <a href="https://www.beepbird.net/webring/next?url=https://racc.blog" aria-label="focus first webring next">→</a>
+  </p>
+
+  <p style="margin:2px 0;">
+    <a href="https://keithhacks.cyou/furryring.php?prev=racc.blog" aria-label="furryring previous">←</a>
     <a href="https://keithhacks.cyou/furryring.php">furryring</a>
-    <a href="https://keithhacks.cyou/furryring.php?next=racc.blog">→</a>
+    <a href="https://keithhacks.cyou/furryring.php?next=racc.blog" aria-label="furryring next">→</a>
   </p>
 
 </div>
 
 <div style="font-size:0.55em;">© {{ site.time | date: "%Y" }} {{ site.title }}.</div>
 
-<img src="/images/character.PNG" id="corner-character" alt="raccoon furry character">
+<img src="/images/character.PNG" id="corner-character" alt="" aria-label="Raccoon character, click to interact" role="button" tabindex="0">
 
-<div id="character-message" style="display: none;">
+<div id="character-message" style="display: none;" aria-live="polite">
   <span id="message-text"></span>
 </div>
 
@@ -153,6 +152,11 @@
   font-size: 0.85em;
 }
 
+.collapsible:focus-visible {
+  outline: 2px solid currentColor;
+  outline-offset: 2px;
+}
+
 .arrow {
   display: inline-block;
   transition: transform 0.3s ease;
@@ -168,6 +172,11 @@
 div p a {
   margin: 0 3px;
   text-decoration: none;
+}
+
+#corner-character:focus-visible {
+  outline: 2px solid currentColor;
+  outline-offset: 2px;
 }
 </style>
 
@@ -188,23 +197,34 @@ function updateIcon(theme){
   const icon = document.getElementById('theme-icon');
   if(theme === 'light'){
     icon.src = '/images/moon-symbol.png';
-    icon.alt = 'Moon';
+    icon.alt = 'Switch to dark mode';
   } else {
     icon.src = '/images/sun-symbol.png';
-    icon.alt = 'Sun';
+    icon.alt = 'Switch to light mode';
   }
 }
 
 const collapsible = document.querySelector('.collapsible');
-collapsible.addEventListener('click', () => {
+
+function toggleWebrings() {
   const content = document.getElementById('webrings');
-  const arrow = collapsible.querySelector('.arrow');
-  if(content.style.maxHeight && content.style.maxHeight !== "0px"){
+  const expanded = content.style.maxHeight && content.style.maxHeight !== "0px";
+  if(expanded){
     content.style.maxHeight = "0px";
-    arrow.style.transform = "rotate(0deg)";
+    collapsible.setAttribute('aria-expanded', 'false');
+    collapsible.textContent = '▼ Webrings';
   } else {
     content.style.maxHeight = content.scrollHeight + "px";
-    arrow.style.transform = "rotate(180deg)";
+    collapsible.setAttribute('aria-expanded', 'true');
+    collapsible.textContent = '▲ Webrings';
+  }
+}
+
+collapsible.addEventListener('click', toggleWebrings);
+collapsible.addEventListener('keydown', (e) => {
+  if(e.key === 'Enter' || e.key === ' '){
+    e.preventDefault();
+    toggleWebrings();
   }
 });
 
@@ -328,6 +348,14 @@ resetInactivityTimer();
 character.addEventListener("click", () => {
   showMessage();
   resetInactivityTimer();
+});
+
+character.addEventListener("keydown", (e) => {
+  if(e.key === 'Enter' || e.key === ' '){
+    e.preventDefault();
+    showMessage();
+    resetInactivityTimer();
+  }
 });
 
 character.addEventListener("mousedown", () => {
