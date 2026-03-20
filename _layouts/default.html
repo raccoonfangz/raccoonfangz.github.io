@@ -78,27 +78,27 @@
 <div class="content" id="webrings" style="max-height:0; overflow:hidden; transition:max-height 0.3s ease;">
 
   <p style="margin:2px 0;">
-    <a href="https://sg.kamiscorner.xyz/webring/previous.php?url=https://racc.blog" aria-label="simplechats webring previous">←</a>
-    <a href="https://sg.kamiscorner.xyz/webring/random.php">simplechats webring</a>
-    <a href="https://sg.kamiscorner.xyz/webring/next.php?url=https://racc.blog" aria-label="simplechats webring next">→</a>
+    <a href="https://sg.kamiscorner.xyz/webring/previous.php?url=https://racc.blog" aria-label="simplechats webring previous" tabindex="-1">←</a>
+    <a href="https://sg.kamiscorner.xyz/webring/random.php" tabindex="-1">simplechats webring</a>
+    <a href="https://sg.kamiscorner.xyz/webring/next.php?url=https://racc.blog" aria-label="simplechats webring next" tabindex="-1">→</a>
   </p>
 
   <p style="margin:2px 0;">
-    <a href="https://webring.bucketfish.me/redirect.html?to=prev&amp;name=racc.blog" aria-label="bucket webring previous">←</a>
-    <a href="https://webring.bucketfish.me">bucket webring</a>
-    <a href="https://webring.bucketfish.me/redirect.html?to=next&amp;name=racc.blog" aria-label="bucket webring next">→</a>
+    <a href="https://webring.bucketfish.me/redirect.html?to=prev&amp;name=racc.blog" aria-label="bucket webring previous" tabindex="-1">←</a>
+    <a href="https://webring.bucketfish.me" tabindex="-1">bucket webring</a>
+    <a href="https://webring.bucketfish.me/redirect.html?to=next&amp;name=racc.blog" aria-label="bucket webring next" tabindex="-1">→</a>
   </p>
 
   <p style="margin:2px 0;">
-    <a href="https://www.beepbird.net/webring/prev?url=https://racc.blog" aria-label="focus first webring previous">←</a>
-    <a href="https://www.beepbird.net/webring/index.html">focus first webring</a>
-    <a href="https://www.beepbird.net/webring/next?url=https://racc.blog" aria-label="focus first webring next">→</a>
+    <a href="https://www.beepbird.net/webring/prev?url=https://racc.blog" aria-label="focus first webring previous" tabindex="-1">←</a>
+    <a href="https://www.beepbird.net/webring/index.html" tabindex="-1">focus first webring</a>
+    <a href="https://www.beepbird.net/webring/next?url=https://racc.blog" aria-label="focus first webring next" tabindex="-1">→</a>
   </p>
 
   <p style="margin:2px 0;">
-    <a href="https://keithhacks.cyou/furryring.php?prev=racc.blog" aria-label="furryring previous">←</a>
-    <a href="https://keithhacks.cyou/furryring.php">furryring</a>
-    <a href="https://keithhacks.cyou/furryring.php?next=racc.blog" aria-label="furryring next">→</a>
+    <a href="https://keithhacks.cyou/furryring.php?prev=racc.blog" aria-label="furryring previous" tabindex="-1">←</a>
+    <a href="https://keithhacks.cyou/furryring.php" tabindex="-1">furryring</a>
+    <a href="https://keithhacks.cyou/furryring.php?next=racc.blog" aria-label="furryring next" tabindex="-1">→</a>
   </p>
 
 </div>
@@ -208,15 +208,18 @@ const collapsible = document.querySelector('.collapsible');
 
 function toggleWebrings() {
   const content = document.getElementById('webrings');
+  const links = content.querySelectorAll('a');
   const expanded = content.style.maxHeight && content.style.maxHeight !== "0px";
   if(expanded){
     content.style.maxHeight = "0px";
     collapsible.setAttribute('aria-expanded', 'false');
     collapsible.textContent = '▼ Webrings';
+    links.forEach(a => a.setAttribute('tabindex', '-1'));
   } else {
     content.style.maxHeight = content.scrollHeight + "px";
     collapsible.setAttribute('aria-expanded', 'true');
     collapsible.textContent = '▲ Webrings';
+    links.forEach(a => a.removeAttribute('tabindex'));
   }
 }
 
