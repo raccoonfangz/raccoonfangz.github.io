@@ -1,7 +1,7 @@
 ---
 layout: default
-title: "Secret"
-permalink: /secret/
+title: "Miscellaneous"
+permalink: /misc/
 ---
 
 <div style="text-align: center; white-space: pre; font-family: monospace;">
