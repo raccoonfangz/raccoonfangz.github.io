@@ -45,6 +45,7 @@ permalink: /buttons-badges/
   <a href="https://mewkittyraccoonstorage.neocities.org"><img src="/images/buttons/mewkittyraccoonstorage.webp"></a>
   <a href="https://maw.neocities.org"><img src="/images/buttons/maw88x31.gif"></a>
   <a href="https://ribo.zone/"><img src="/images/buttons/ribozone.gif"></a>
+  <a href="https://grampus.neocities.org/home"><img src="/images/buttons/grampusbutton.png"></a>
   <a href="https://doqmeat.com"><img src="/images/buttons/doqmeat.png"></a>
   <a href="https://sixey.es/"><img src="/images/buttons/sixeyes.gif"></a>
   <a href="https://sweetfish.site/"><img src="/images/buttons/button3.png"></a>
