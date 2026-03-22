@@ -49,6 +49,7 @@ permalink: /buttons-badges/
   <a href="https://sixey.es/"><img src="/images/buttons/sixeyes.gif"></a>
   <a href="https://sweetfish.site/"><img src="/images/buttons/button3.png"></a>
   <a href="https://kero.gay/"><img src="/images/buttons/loaf_background.png"></a>
+<a href="https://sunnyday.neocities.org/" target="_blank"><img src="/images/buttons/button1.png"></a>
   <img src="/images/buttons/bisexual.png">
   <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/"><img src="/images/buttons/by-nc-sa.png"></a>
   <img src="/images/buttons/not_intended_for_children_02.jpg">
