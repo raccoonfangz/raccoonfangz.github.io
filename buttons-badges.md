@@ -60,7 +60,7 @@ permalink: /buttons-badges/
   <img src="/images/buttons/trans-rights-now.webp">
   <img src="/images/buttons/antinazi.gif">
   <img src="/images/buttons/apocalypse_now.gif">
-  <img src="/images/buttons/Athens_Academy_7860_hmtna42.gif">
+  <a href="https://godhatesfags.com/"><img src="/images/buttons/Athens_Academy_7860_hmtna42.gif"></a>
   <img src="/images/buttons/anythingbutwindows.gif">
   <img src="/images/buttons/twopaws.webp">
   <img src="/images/buttons/CapitolHill_7283_img_lonewolf.gif">
