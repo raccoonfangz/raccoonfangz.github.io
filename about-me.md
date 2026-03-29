@@ -39,7 +39,7 @@ in the same place when they can fly anywhere on the earth.
 Then I ask myself the same question.”
 **- Harun Yahya**
 
-**Artists:** Radiohead, Mac DeMarco, The Murder Capital, Fontaines D.C.
+**Artists:** Radiohead, Mac DeMarco, The Murder Capital, Mike Klubnika, Fontaines D.C.
 
 **Book:** “A Little Life” **- Hanya Yanagihara**
 
