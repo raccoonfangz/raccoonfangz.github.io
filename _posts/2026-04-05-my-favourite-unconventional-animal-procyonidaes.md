@@ -7,7 +7,7 @@ tags:
 
 ![coati](/images/coatimundi.jpg)
 
-Okay, maybe it’s not one animal but a family.. but hear me out!!
+Okay, maybe it’s not one animal but a family.. but hear me out!! 
 
 Raccoons and coatis. 
 
