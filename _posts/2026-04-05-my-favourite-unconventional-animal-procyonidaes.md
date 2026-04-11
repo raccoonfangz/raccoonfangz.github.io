@@ -1,6 +1,6 @@
 ---
 layout: post
-title: My favourite unconventional animal(s): Procyonidaes
+title: "My favourite unconventional animal(s): Procyonidaes"
 tags:
   - 2026
 ---
