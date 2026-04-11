@@ -30,5 +30,6 @@ But if they had a bucket of water next to the food in a city, they probably woul
 And the increased sensitivity of the paws is a benefit of the instinct (which likely contributed to the evolution of the motor pattern), but it does not fully explain the expression of the behaviour​​​​​​​​​​​​​​​​.
 
 Check out the rest or the bearblog’s  carnival participants [**articles**](https://oracleofsages.bearblog.dev/grizzly-gazette-carnival-april-your-favourite-unconventional-animal/)!! They are really fun :]
+
 ___
 Enjoyed the article? Subscribe to my [**RSS feed**](/feed/rss.xml) :D
