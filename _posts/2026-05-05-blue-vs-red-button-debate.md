@@ -1,4 +1,4 @@
-![coati](/images/coatimundi.jpg)
+![coati](/images/debate.webp)
 
 I found a very interesting logical debate. At least it is designed to feel like a logic puzzle, but it’s actually a values elicitation test. It reveals what you optimise for, not how well you reason.
 
