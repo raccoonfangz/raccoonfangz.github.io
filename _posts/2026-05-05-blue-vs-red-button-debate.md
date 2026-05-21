@@ -24,5 +24,6 @@ The world wasn’t built exclusively by people who pressed blue. Competitive sel
 Not out of naivety. Out of a calculated understanding that individual survival inside a collapsing collective is a diminishing prize. Red is internally consistent if survival is your only variable. But humans repeatedly, across cultures and centuries, kept adding variables. Family, community, strangers, future generations. People they’d never meet. Whether that expansion was driven by genuine altruism or enlightened self-interest is almost beside the point. A hospital treats patients regardless of whether it was built by saints or shareholders.
 
 So, would you take a gamble for your values, or play it safe with your life?
+
 ___
 Enjoyed the article? Subscribe to my [**RSS feed**](/feed/?type=rss) :D
