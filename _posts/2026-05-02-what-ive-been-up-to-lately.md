@@ -1,3 +1,10 @@
+---
+layout: post
+title: What I've been up to lately
+tags:
+  - 2026
+---
+
 To whoever still managed to find this, hi! :] I’ve been off blogging for some time now so I wanted to explain my inactivity. 
 
 read as: I’M STILL STANDING🎶
