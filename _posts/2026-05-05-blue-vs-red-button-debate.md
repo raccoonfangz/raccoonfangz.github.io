@@ -1,4 +1,11 @@
-![coati](/images/debate.webp)
+---
+layout: post
+title: Blue vs red button debate
+tags:
+  - 2026
+---
+
+![debate](/images/debate.webp)
 
 I found a very interesting logical debate. At least it is designed to feel like a logic puzzle, but it’s actually a values elicitation test. It reveals what you optimise for, not how well you reason.
 
