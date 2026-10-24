@@ -17,8 +17,6 @@ permalink: /about-me/
 
 🇬🇧 - C1
 
-🇷🇺 - A1/A2
-
 
 **Country of residence:** Poland
 
@@ -32,12 +30,12 @@ ___
 **Interests:** Biology, Reading, Journaling, Furries, Observing
 
 
-**Song:** [Climbing up the walls ](https://www.youtube.com/watch?v=XX4EpkR-Sp4)**- Radiohead**
+**Song:** [There, there](https://youtu.be/7AQSLozK7aA)**- Radiohead**
 
 **Quote:** “I always wonder why birds stay
 in the same place when they can fly anywhere on the earth.
 Then I ask myself the same question.”
-**- Harun Yahya**
+
 
 **Artists:** Radiohead, Mac DeMarco, The Murder Capital, Mike Klubnika, Fontaines D.C.
 
@@ -45,7 +43,7 @@ Then I ask myself the same question.”
 
 **Movie:** “Fantastic Mr. fox” **- Wes Anderson**
 
-**Series:** BEASTARS  **- Paru Itagaki** [(jack my beloved <3)](https://bear-images.sfo2.cdn.digitaloceanspaces.com/raccoon/jack.webp)
+**Series:** BEASTARS  **- Paru Itagaki** [(jack my beloved <3)](/images/jack.jpg)
 
 **Cartoon:** SpongeBob SquarePants 
 **- Stephen Hillenburg**
@@ -61,7 +59,7 @@ the feeling one has on realising that every other individual one sees has a life
 
 **Games:** Rimworld, Project Zomboid
 
-**Animals:** Raccoons, Foxes, Coyotes, Deers and a hundred more ;]
+**Animals:** Raccoons, Foxes, Coyotes, Deers, Tasmanian devils and a hundred more ;]
 
 **Colours**: Yellow, brown, teal
 
