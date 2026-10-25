@@ -30,7 +30,7 @@ ___
 **Interests:** Biology, Reading, Journaling, Furries, Observing
 
 
-**Song:** [There, there](https://youtu.be/7AQSLozK7aA)**- Radiohead**
+**Song:** [There, there ](https://youtu.be/7AQSLozK7aA)**- Radiohead**
 
 **Quote:** “I always wonder why birds stay
 in the same place when they can fly anywhere on the earth.
@@ -43,7 +43,7 @@ Then I ask myself the same question.”
 
 **Movie:** “Fantastic Mr. fox” **- Wes Anderson**
 
-**Series:** BEASTARS  **- Paru Itagaki** [(jack my beloved <3)](/images/jack.jpg)
+**Series:** BEASTARS **- Paru Itagaki** [(jack my beloved <3)](/images/jack.jpg)
 
 **Cartoon:** SpongeBob SquarePants 
 **- Stephen Hillenburg**
@@ -57,7 +57,7 @@ the feeling one has on realising that every other individual one sees has a life
 
 **Joke:** A bear walks into a bar and says: "Give me a whiskey and….. cola." "Why the big pause?" - asks the bartender. The bear shrugged. "I'm not sure; I was born with them.”
 
-**Games:** Rimworld, Project Zomboid
+**Games:** Rimworld, Project Zomboid, Roblox
 
 **Animals:** Raccoons, Foxes, Coyotes, Deers, Tasmanian devils and a hundred more ;]
 
