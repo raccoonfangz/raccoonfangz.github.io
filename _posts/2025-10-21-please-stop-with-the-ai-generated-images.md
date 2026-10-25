@@ -38,7 +38,9 @@ I’m not your parent, and I won’t tell you what to do with AI. Use it however
 
 ___
 Enjoyed the article? Subscribe to my [**RSS feed**](/feed/rss.xml) :D
+
 ___ 
+
 **Further reading:**  
 
 * <https://www.scu.edu/ethics/focus-areas/internet-ethics/resources/the-environmental-impact-of-generating-images-with-ai-an-ethics-case-study/>
