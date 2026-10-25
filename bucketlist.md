@@ -14,15 +14,13 @@ permalink: /bucketlist/
 [ ] See northern lights \
 [x] ~~Watch the sunset alone in peace abroad~~  \
 [ ] Hike somewhere remote  \
-[ ] Go to TED talk live \
-[ ] Go fishing 
+[ ] Go to TED talk live 
+
 
 ##  Personal
 [ ] Get a tattoo \
 [ ] Plant a tree \
 [ ] Move out \
-[ ] Move somewhere abroad \
-[ ] Become a med specialist \
 [ ] Finish high school \
 [ ] Get a driving licence \
 [ ] Invest money in stocks \
@@ -30,9 +28,8 @@ permalink: /bucketlist/
 [x] ~~Try a new sport~~ 
 
 ##  Things
-[ ] Get a great wardrobe \
 [ ] Buy/Make a fursuit \
-[x] Get an exotic pet 
+[x] ~~Get an exotic pet~~  
 
 ##  Animal bucket list
 [ ] See all animals that I want 
@@ -50,7 +47,7 @@ permalink: /bucketlist/
 
 ___
 
-Last updated: 28.02.2026
+Last updated: 25.10.2026
 
 
 
