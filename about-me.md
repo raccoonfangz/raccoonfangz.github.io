@@ -48,7 +48,7 @@ Then I ask myself the same question.”
 **Cartoon:** SpongeBob SquarePants 
 **- Stephen Hillenburg**
 
-**Painter:** Claude Monet - “The Magpie” (1868)
+**Painting:** Claude Monet - “The Magpie” (1868)
 
 ![Claude-Monet-The-Magpie](/images/claude-monet-the-magpie-.webp)
 
