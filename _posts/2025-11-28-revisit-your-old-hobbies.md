@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 
+title: Revisit your old hobbies
 tags:
   - 2025
 ---
