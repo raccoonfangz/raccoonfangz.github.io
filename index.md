@@ -12,7 +12,7 @@ Want a random quote from my collection? See my [**random quote page**](random-qu
 Remember to [**“Immerse your soul in love”**](https://youtu.be/LCJblaUkkfc?t=227)                                                                                          
 *-* Street Spirit (Fade Out), Radiohead  - The Bends, 1995
 
-You can reach out to me via [**email**](mailto:ash.pacelt@gmail.com) 
+You can reach out to me via [**email**](mailto:raccblog@icloud.com) 
 
 ---
 
