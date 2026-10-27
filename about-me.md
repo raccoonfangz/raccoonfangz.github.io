@@ -6,7 +6,6 @@ permalink: /about-me/
 
 ## About me 
 
-
 **Name:** Adam ♂︎ (he/him)
 
 **Species:** Procyon Lotor impersonating a Homo Sapiens  
@@ -16,7 +15,6 @@ permalink: /about-me/
 🇵🇱  - C2
 
 🇬🇧 - C1
-
 
 **Country of residence:** Poland
 
@@ -59,7 +57,7 @@ the feeling one has on realising that every other individual one sees has a life
 
 **Games:** Rimworld, Project Zomboid, Roblox
 
-**Animals:** Raccoons, Foxes, Coyotes, Deers, Tasmanian devils and a hundred more ;]
+**Animals:** Raccoons, Deers, Coyotes, Tasmanian devils and a hundred more ;]
 
 **Colours**: Yellow, brown, teal
 
