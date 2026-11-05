@@ -14,4 +14,6 @@ This is a blog with articles, not watertight arguments being sent to a philosoph
 
 Not everything needs to be a rigorous ethical treatise, sometimes I just want to say “this feels wrong to me” and put it out there.
 
+However not everything I post is about ethics and philosophy! You can find my rants and read about my experiences too!
+
 I invite you to check out my articles :]
