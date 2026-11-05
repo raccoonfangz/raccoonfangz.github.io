@@ -12,12 +12,13 @@ followed accounts and everything else, to remove the stuff I don’t identify an
 
 But, why am I doing it?
 
-It allows me to have a bit of fresh air in the digital space! - Everything feels (and is) more clear, stuff that is left is actually there for a reason so I don’t get overwhelmed
+It allows me to have a bit of fresh air in the digital space! - Everything feels (and is) more clear, stuff that is left is actually there for a reason, so I don’t get overwhelmed
 with the sheer amount of data. Another thing is that it’s safer for me! There’s a less chance that someone finds something personal about me, that I didn’t want to be public.
 
 Remember, that everything that is public about you decides how other’s perceive you! Would you like to be not employed because the employer finds your controversial comment?
 
 Take care of your online presence!
+
 ___
 
 Enjoyed the article? Subscribe to my [**RSS feed**](/feed/rss.xml) :D
